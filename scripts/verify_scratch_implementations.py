@@ -56,3 +56,42 @@ else:
     print("FAIL: K-Means — cần điều tra/sửa ở M2")
 
 print("CHƯA KIỂM TRA: Ward, DBSCAN, Davies-Bouldin, Calinski-Harabasz, SimplePCA")
+
+
+# 4. Rà soát bảng interim và các cột đầu vào
+import pandas as pd
+
+FEATURE_COLUMNS = [
+    "gdp_per_capita",
+    "social_support",
+    "healthy_life_expectancy",
+    "freedom",
+    "generosity",
+    "corruption_perception",
+]
+FORBIDDEN_COLUMNS = {"happiness_score", "happiness_rank"}
+
+interim_path = FilePath(__file__).resolve().parents[1] / "data/interim/happiness_merged.csv"
+
+if interim_path.exists():
+    df = pd.read_csv(interim_path)
+    missing_features = [c for c in FEATURE_COLUMNS if c not in df.columns]
+    assert not missing_features, f"Thiếu cột đặc trưng: {missing_features}"
+    assert not (set(FEATURE_COLUMNS) & FORBIDDEN_COLUMNS), "Danh sách đặc trưng chứa cột bị cấm"
+
+    years = sorted(df["year"].dropna().astype(int).unique().tolist())
+    print(f"Năm trong interim: {years}")
+    print(f"Số dòng theo năm: {df.groupby('year').size().to_dict()}")
+
+    missing_values = df[FEATURE_COLUMNS].isna().sum()
+    print("Giá trị thiếu trong 6 đặc trưng:")
+    print(missing_values[missing_values > 0].to_dict())
+
+    missing_rows = df.loc[
+        df["corruption_perception"].isna(),
+        ["country", "year", "corruption_perception"],
+    ]
+    print("Dòng thiếu corruption_perception:")
+    print(missing_rows.to_dict(orient="records"))
+else:
+    print(f"SKIP: Không tìm thấy file interim: {interim_path}")
