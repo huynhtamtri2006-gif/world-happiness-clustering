@@ -29,21 +29,21 @@ Phụ trách chính **Giai đoạn 1, 2, 4** và chủ trì việc ghép báo c�
 - [x] **Ngày 2:** Hoàn thiện kế hoạch thực thi 28 ngày [`ke_hoach_nhom.md`](./ke_hoach_nhom.md) và bảng phân công [`phan_cong_cong_viec.md`](./phan_cong_cong_viec.md).
 
 #### 🔹 Mốc M1: Xây dựng nền dữ liệu 5 năm & Kiểm soát chất lượng (Ngày 3 – Ngày 7)
-- [ ] **Ngày 3:** Phát triển module [`src/data/data_loader.py`](../../src/data/data_loader.py):
+- [x] **Ngày 3:** Phát triển module [`src/data/data_loader.py`](../../src/data/data_loader.py):
   - Xây dựng từ điển `COLUMN_MAPPING` đồng nhất tên cột qua 5 năm.
   - Viết hàm `build_interim_dataset(years=[2015..2019])`.
   - Cài đặt cơ chế chuẩn hóa tên quốc gia `harmonize_country_names`, từ điển sửa lỗi `COUNTRY_NAME_FIXES` và bộ chuyển đổi `country_to_iso3`.
   - Định nghĩa hàm nạp `load_interim` và `load_processed`.
-- [ ] **Ngày 4:** Sửa đổi và hoàn thiện [`notebooks/01_data_understanding_and_cleaning.ipynb`](../../notebooks/01_data_understanding_and_cleaning.ipynb):
+- [x] **Ngày 4:** Sửa đổi và hoàn thiện [`notebooks/01_data_understanding_and_cleaning.ipynb`](../../notebooks/01_data_understanding_and_cleaning.ipynb):
   - Viết mã nguồn nạp 5 file raw CSV (2015–2019).
   - Loại bỏ các cột sai số (`Standard Error`, `Whisker.high`, `Whisker.low`) kèm lập luận khoa học trong markdown.
-  - Xử lý bản ghi khuyết thiếu của UAE năm 2018.
-  - Xuất file dữ liệu trung gian thống nhất [`data/interim/happiness_merged.csv`](../../data/interim/happiness_merged.csv) (783 dòng dữ liệu).
-- [ ] **Ngày 5:** Quản trị môi trường và kho lưu trữ:
+  - Xử lý bản ghi khuyết thiếu của UAE năm 2018 (loại bỏ an toàn khỏi thực nghiệm).
+  - Xuất file dữ liệu trung gian thống nhất [`data/interim/happiness_merged.csv`](../../data/interim/happiness_merged.csv) (781 dòng dữ liệu sạch).
+- [x] **Ngày 5:** Quản trị môi trường và kho lưu trữ:
   - Cập nhật [`.gitignore`](../../.gitignore) bỏ chặn `README.md`.
   - Chốt phiên bản cố định trong [`requirements.txt`](../../requirements.txt).
-- [ ] **Ngày 6:** Viết [`README.md`](../../README.md) hoàn chỉnh: bảng phân công đóng góp 34/33/33, hướng dẫn thiết lập môi trường và lệnh chạy lại từ đầu; cập nhật [`notebooks/README.md`](../../notebooks/README.md).
-- [ ] **Ngày 7:** Tổ chức buổi **Walkthrough 20 phút** trình bày quy trình tiền xử lý dữ liệu và cấu trúc bảng interim cho Trí và Trung; kiểm tra notebook 01 chạy sạch từ đầu.
+- [x] **Ngày 6:** Viết [`README.md`](../../README.md) hoàn chỉnh: bảng phân công đóng góp 34/33/33, hướng dẫn thiết lập môi trường và lệnh chạy lại từ đầu; cập nhật [`notebooks/README.md`](../../notebooks/README.md).
+- [x] **Ngày 7:** Tổ chức buổi **Walkthrough 20 phút** trình bày quy trình tiền xử lý dữ liệu và cấu trúc bảng interim cho Trí và Trung; kiểm tra notebook 01 chạy sạch từ đầu (0 cell lỗi).
 
 #### 🔹 Mốc M2: Kiểm soát chất lượng & Tối ưu hiệu năng (Ngày 8 – Ngày 14)
 - [ ] **Ngày 8 (Họp nhóm):** Đánh giá nghiệm thu tiến độ M1; chốt chữ ký API với Trí trước khi triển khai thuật toán from-scratch.
@@ -86,7 +86,7 @@ Phụ trách chính **Giai đoạn 1, 2, 4** và chủ trì việc ghép báo c�
 ### 📦 SẢN PHẨM BÀN GIAO CỤ THỂ (DELIVERABLES)
 1. **Module nạp dữ liệu:** [`src/data/data_loader.py`](../../src/data/data_loader.py) (đầy đủ các hàm nạp, làm sạch, chuẩn hóa tên quốc gia 5 năm).
 2. **Notebook tiền xử lý:** [`notebooks/01_data_understanding_and_cleaning.ipynb`](../../notebooks/01_data_understanding_and_cleaning.ipynb) (chạy sạch, markdown phân tích chi tiết).
-3. **Bộ dữ liệu trung gian:** [`data/interim/happiness_merged.csv`](../../data/interim/happiness_merged.csv) (783 dòng, schema thống nhất).
+3. **Bộ dữ liệu trung gian:** [`data/interim/happiness_merged.csv`](../../data/interim/happiness_merged.csv) (781 dòng sạch, 0 khuyết thiếu ở 6 đặc trưng, schema thống nhất).
 4. **Tài liệu quản trị:** [`README.md`](../../README.md), [`requirements.txt`](../../requirements.txt), [`.gitignore`](../../.gitignore).
 5. **Công cụ tạo báo cáo:** [`reports/final_report/build_report.py`](./build_report.py).
 6. **Văn bản báo cáo Word:** Phụ trách trọn vẹn Mục 1, 2, 3, 4 trong [`Bao_cao_De_tai_16_Nhom_12.docx`](./Bao_cao_De_tai_16_Nhom_12.docx).
