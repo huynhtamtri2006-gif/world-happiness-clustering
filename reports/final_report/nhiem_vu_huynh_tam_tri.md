@@ -35,32 +35,32 @@ Phụ trách chính **Giai đoạn 6, 7, 8** của pipeline khai phá dữ liệ
 - [x] **Ngày 2:** Soạn thảo quyết định kiến trúc [`docs/adr/0003-mo-rong-tu-cai-dat-pca-dbscan-json.md`](../../docs/adr/0003-mo-rong-tu-cai-dat-pca-dbscan-json.md).
 
 #### 🔹 Mốc M1: Xây dựng khung kiểm chứng thuật toán đối chứng (Ngày 3 – Ngày 7)
-- [ ] **Ngày 3:** Xây dựng khung script kiểm thử [`scripts/verify_scratch_implementations.py`](../../scripts/verify_scratch_implementations.py):
+- [x] **Ngày 3:** Xây dựng khung script kiểm thử [`scripts/verify_scratch_implementations.py`](../../scripts/verify_scratch_implementations.py):
   - Lập assert kiểm tra bất biến quy tắc vàng: Ma trận đặc trưng $X$ tuyệt đối không chứa `happiness_score` và `happiness_rank`.
   - Viết bài test đối chứng hàm tính khoảng cách Euclid và Silhouette với `sklearn.metrics`.
-- [ ] **Ngày 4:** Thêm bài test đối chứng cho K-Means: So sánh hàm mục tiêu `inertia` (đảm bảo hàm tự viết đạt inertia không vượt quá `sklearn`) và tính chỉ số ARI $\ge 0.99$.
-- [ ] **Ngày 5:** Thêm bài test đối chứng cho Phân cấp Ward (so với `scipy.cluster.hierarchy.linkage(method='ward')`) và DBSCAN (so với `sklearn.cluster.DBSCAN`).
-- [ ] **Ngày 6:** Thêm bài test đối chứng cho Davies-Bouldin, Calinski-Harabasz và SimplePCA (kiểm tra phương sai giải thích và tọa độ chiếu khớp $\le 10^{-6}$).
-- [ ] **Ngày 7:** Rà soát chéo kết quả nạp dữ liệu interim của Trường; chuẩn bị triển khai code thuật toán from-scratch.
+- [x] **Ngày 4:** Thêm bài test đối chứng cho K-Means: So sánh hàm mục tiêu `inertia` (đảm bảo hàm tự viết đạt inertia không vượt quá `sklearn`) và tính chỉ số ARI $\ge 0.99$.
+- [x] **Ngày 5:** Thêm bài test đối chứng cho Phân cấp Ward (so với `scipy.cluster.hierarchy.linkage(method='ward')`) và DBSCAN (so với `sklearn.cluster.DBSCAN`).
+- [x] **Ngày 6:** Thêm bài test đối chứng cho Davies-Bouldin, Calinski-Harabasz và SimplePCA (kiểm tra phương sai giải thích và tọa độ chiếu khớp $\le 10^{-6}$).
+- [x] **Ngày 7:** Rà soát chéo kết quả nạp dữ liệu interim của Trường; chuẩn bị triển khai code thuật toán from-scratch.
 
 #### 🔹 Mốc M2: Tự cài đặt thuật toán & Độ đo From-Scratch (Ngày 8 – Ngày 14)
-- [ ] **Ngày 8 (Họp nhóm):** Bắt đầu triển khai lớp `SimpleKMeans` trong [`src/models/clustering.py`](../../src/models/clustering.py):
+- [x] **Ngày 8 (Họp nhóm):** Bắt đầu triển khai lớp `SimpleKMeans` trong [`src/models/clustering.py`](../../src/models/clustering.py):
   - Khởi tạo thông minh `kmeans++`.
   - Lặp `n_init=10` lần để tránh rơi vào cực tiểu địa phương xấu.
   - Lưu lại lịch sử suy giảm `inertia_history` và số vòng lặp hội tụ `n_iter_`.
-- [ ] **Ngày 9:** Cài đặt lớp `SimpleHierarchicalClustering` với **tiêu chí liên kết Ward thật**:
+- [x] **Ngày 9:** Cài đặt lớp `SimpleHierarchicalClustering` với **tiêu chí liên kết Ward thật**:
   - Ứng dụng công thức Lance–Williams và kỹ thuật cache khoảng cách để tăng tốc độ gộp cụm.
   - Lưu lại nhật ký các bước gộp `merge_history` để phục vụ vẽ cây Dendrogram.
-- [ ] **Ngày 10:** Cài đặt lớp `SimpleDBSCAN`:
+- [x] **Ngày 10:** Cài đặt lớp `SimpleDBSCAN`:
   - Tìm láng giềng bán kính $\epsilon$ bằng ma trận khoảng cách Euclid.
   - Lan truyền nhãn cụm cho các điểm lõi (*core samples*); gán nhãn $-1$ cho điểm ngoại lai nhiễu.
-- [ ] **Ngày 11:** Viết các hàm wrapper và đánh giá mô hình:
+- [x] **Ngày 11:** Viết các hàm wrapper và đánh giá mô hình:
   - Các hàm tiện ích: `run_kmeans`, `run_hierarchical`, `run_dbscan`.
   - Hàm đánh giá toàn diện `evaluate_clustering`: trả về từ điển phẳng gồm 7 khóa (`silhouette`, `davies_bouldin`, `calinski_harabasz`, `inertia`, `n_clusters`, `n_noise`, `sizes`).
-- [ ] **Ngày 12:** Hoàn thiện các hàm tính toán độ đo độc lập:
+- [x] **Ngày 12:** Hoàn thiện các hàm tính toán độ đo độc lập:
   - `calculate_silhouette_score_simple`, `calculate_davies_bouldin_score_simple`, `calculate_calinski_harabasz_score_simple`, `calculate_adjusted_rand_index`.
-- [ ] **Ngày 13:** Cài đặt lớp `SimplePCA` trong [`src/features/feature_engineering.py`](../../src/features/feature_engineering.py) (chuẩn hóa dữ liệu ➔ tính ma trận hiệp phương sai ➔ giải bài toán trị riêng với `np.linalg.eigh` ➔ sắp xếp vector riêng và chiếu dữ liệu); chạy script kiểm thử đối chứng đạt **PASS 20/20 hạng mục**.
-- [ ] **Ngày 14:** Cài đặt cơ chế lưu và nạp mô hình dưới dạng JSON: `save_cluster_artifacts` và `load_cluster_artifacts`; tổ chức buổi **Walkthrough 20 phút** trình bày mã nguồn thuật toán cho Trường và Trung.
+- [x] **Ngày 13:** Cài đặt lớp `SimplePCA` trong [`src/features/feature_engineering.py`](../../src/features/feature_engineering.py) (chuẩn hóa dữ liệu ➔ tính ma trận hiệp phương sai ➔ giải bài toán trị riêng với `np.linalg.eigh` ➔ sắp xếp vector riêng và chiếu dữ liệu); chạy script kiểm thử đối chứng đạt **PASS 20/20 hạng mục**.
+- [x] **Ngày 14:** Cài đặt cơ chế lưu và nạp mô hình dưới dạng JSON: `save_cluster_artifacts` và `load_cluster_artifacts`; tổ chức buổi **Walkthrough 20 phút** trình bày mã nguồn thuật toán cho Trường và Trung.
 
 #### 🔹 Mốc M3: Thực thi ma trận thực nghiệm 5 năm × 5 cấu hình (Ngày 15 – Ngày 21)
 - [ ] **Ngày 15 (Họp nhóm):** Xây dựng [`notebooks/03_clustering_experiments_and_comparison.ipynb`](../../notebooks/03_clustering_experiments_and_comparison.ipynb):
