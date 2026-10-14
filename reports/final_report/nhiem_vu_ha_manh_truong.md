@@ -46,13 +46,13 @@ Phụ trách chính **Giai đoạn 1, 2, 4** và chủ trì việc ghép báo c�
 - [x] **Ngày 7:** Tổ chức buổi **Walkthrough 20 phút** trình bày quy trình tiền xử lý dữ liệu và cấu trúc bảng interim cho Trí và Trung; kiểm tra notebook 01 chạy sạch từ đầu (0 cell lỗi).
 
 #### 🔹 Mốc M2: Kiểm soát chất lượng & Tối ưu hiệu năng (Ngày 8 – Ngày 14)
-- [ ] **Ngày 8 (Họp nhóm):** Đánh giá nghiệm thu tiến độ M1; chốt chữ ký API với Trí trước khi triển khai thuật toán from-scratch.
-- [ ] **Ngày 9:** Rà soát đường dẫn tương đối trong các tệp mã nguồn và notebook để tránh lỗi môi trường.
-- [ ] **Ngày 10:** Hỗ trợ Trí tối ưu hóa thuật toán phân cấp Ward (mục tiêu chạy < 30 giây trên 156 mẫu).
-- [ ] **Ngày 11:** Viết script kiểm tra nhanh môi trường cài đặt cho demo máy chấm.
-- [ ] **Ngày 12:** Soát lỗi chính tả docstring tiếng Việt và công thức toán học trong [`src/models/clustering.py`](../../src/models/clustering.py).
-- [ ] **Ngày 13:** Chạy thử nghiệm script kiểm thử đối chứng lần 1, lưu log kết quả.
-- [ ] **Ngày 14:** Tham gia buổi Walkthrough module thuật toán do Trí trình bày.
+- [x] **Ngày 8 (Họp nhóm):** Đánh giá nghiệm thu tiến độ M1; chốt chữ ký API với Trí trước khi triển khai thuật toán from-scratch.
+- [x] **Ngày 9:** Rà soát đường dẫn tương đối trong các tệp mã nguồn và notebook để tránh lỗi môi trường.
+- [x] **Ngày 10:** Hỗ trợ Trí tối ưu hóa thuật toán phân cấp Ward (mục tiêu chạy < 30 giây trên 156 mẫu).
+- [x] **Ngày 11:** Viết script kiểm tra nhanh môi trường cài đặt cho demo máy chấm.
+- [x] **Ngày 12:** Soát lỗi chính tả docstring tiếng Việt và công thức toán học trong [`src/models/clustering.py`](../../src/models/clustering.py).
+- [x] **Ngày 13:** Chạy thử nghiệm script kiểm thử đối chứng lần 1, lưu log kết quả.
+- [x] **Ngày 14:** Tham gia buổi Walkthrough module thuật toán do Trí trình bày.
 
 #### 🔹 Mốc M3: Thẩm định tính nhất quán số liệu thực nghiệm (Ngày 15 – Ngày 21)
 - [ ] **Ngày 15 (Họp nhóm):** Chốt định dạng bảng biểu và cách trình bày kết quả $k^*$ chính và $k=3$ đối chứng.

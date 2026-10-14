@@ -1,0 +1,16 @@
+PASS: Euclidean distance
+PASS: Silhouette
+PASS: K-Means — ARI=1.000000, inertia=0.120000, sklearn=0.120000
+PASS: Ward vs SciPy — ARI=1.000000, merges=3
+PASS: DBSCAN vs sklearn — ARI=1.000000, noise=1
+PASS: Davies–Bouldin — sai số=5.23e-15
+PASS: Calinski–Harabasz — sai số=0
+PASS: ARI — sai số=0
+PASS: SimplePCA explained variance — sai số=1.11e-16
+PASS: SimplePCA projected coordinates — sai số=1.78e-15
+PASS: JSON artifact round-trip
+PASS: Golden rule feature list
+Interim years: [2015, 2016, 2017, 2018, 2019]
+Missing feature values: {}
+
+Tổng kết: tất cả kiểm tra tự động đều PASS.
