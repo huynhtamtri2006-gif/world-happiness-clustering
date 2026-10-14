@@ -55,9 +55,6 @@ Thumbs.db
 .env
 .env.local
 
-# Documentation to be added later
-README.md
-
 # IDE & Office temporary files
 ~$*.docx
 ~$*.pptx

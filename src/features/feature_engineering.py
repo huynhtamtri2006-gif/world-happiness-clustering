@@ -163,11 +163,73 @@ def scale_features(
     return np.array(scaled_list), scaler
 
 
-def apply_pca(X_scaled: np.ndarray, n_components: int = 2, random_state: int = 42):
-    """
-    Giảm chiều dữ liệu bằng PCA phục vụ vẽ biểu đồ phân tán 2D.
-    """
-    from sklearn.decomposition import PCA
-    pca = PCA(n_components=n_components, random_state=random_state)
+
+class SimplePCA:
+    """PCA from scratch bằng ma trận hiệp phương sai và np.linalg.eigh."""
+
+    def __init__(self, n_components: int = 2):
+        self.n_components = n_components
+        self.mean_ = None
+        self.components_ = None
+        self.explained_variance_ = None
+        self.explained_variance_ratio_ = None
+
+    def fit(self, data):
+        X = np.asarray(data, dtype=float)
+
+        if X.ndim != 2 or X.shape[0] < 2:
+            raise ValueError("PCA cần ma trận 2D có ít nhất 2 dòng")
+        if not np.isfinite(X).all():
+            raise ValueError("Dữ liệu PCA không được chứa NaN hoặc vô cực")
+        if not 1 <= self.n_components <= min(X.shape):
+            raise ValueError("n_components vượt giới hạn của dữ liệu")
+
+        self.mean_ = X.mean(axis=0)
+        centered = X - self.mean_
+        covariance = (centered.T @ centered) / (X.shape[0] - 1)
+
+        eigenvalues, eigenvectors = np.linalg.eigh(covariance)
+        order = np.argsort(eigenvalues)[::-1]
+
+        eigenvalues = eigenvalues[order]
+        eigenvectors = eigenvectors[:, order]
+
+        # Chọn thành phần chính và đặt dấu nhất quán:
+        # phần tử có trị tuyệt đối lớn nhất trong mỗi thành phần là dương.
+        self.components_ = eigenvectors[:, :self.n_components].T
+        for component in self.components_:
+            pivot = np.argmax(np.abs(component))
+            if component[pivot] < 0:
+                component *= -1
+
+        self.explained_variance_ = eigenvalues[:self.n_components]
+        total_variance = np.sum(eigenvalues)
+
+        if total_variance == 0:
+            self.explained_variance_ratio_ = np.zeros(self.n_components)
+        else:
+            self.explained_variance_ratio_ = (
+                self.explained_variance_ / total_variance
+            )
+
+        return self
+
+    def transform(self, data):
+        X = np.asarray(data, dtype=float)
+        if self.mean_ is None:
+            raise RuntimeError("Cần gọi fit trước transform")
+        return (X - self.mean_) @ self.components_.T
+
+    def fit_transform(self, data):
+        return self.fit(data).transform(data)
+
+
+def apply_pca(
+    X_scaled: np.ndarray,
+    n_components: int = 2,
+    random_state: int = 42,
+):
+    """Giảm chiều bằng SimplePCA; giữ nguyên API của hàm cũ."""
+    pca = SimplePCA(n_components=n_components)
     X_pca = pca.fit_transform(X_scaled)
     return X_pca, pca
