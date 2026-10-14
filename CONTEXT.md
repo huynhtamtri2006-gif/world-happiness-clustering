@@ -89,3 +89,7 @@ _Avoid_: Ad-hoc analysis, Quy trình tự do
 **From-Scratch Algorithm**:
 Thuật toán do sinh viên tự code logic toán học từng bước bằng NumPy/Pandas cơ bản, không sử dụng API huấn luyện của thư viện Scikit-Learn. Theo ADR 0003, phạm vi này bao gồm K-Means, phân cấp Ward, DBSCAN, giảm chiều PCA và các độ đo Silhouette, Davies-Bouldin, Calinski-Harabasz, Adjusted Rand Index.
 _Avoid_: Black-box model, Built-in clusterer
+
+**Reproducible Path (Đường dẫn tái lập độc lập môi trường)**:
+Cơ chế quản lý đường dẫn mã nguồn và dữ liệu dựa trên gốc thư mục dự án (`Path(__file__).resolve()`) hoặc đường dẫn tương đối, bảo đảm toàn bộ pipeline khai phá dữ liệu chạy lại được từ đầu trên bất kỳ máy cá nhân hay môi trường máy chấm nào mà không bị lỗi hardcoded paths.
+_Avoid_: Đường dẫn tuyệt đối, C:\Users\..., /home/..., hardcoded path
