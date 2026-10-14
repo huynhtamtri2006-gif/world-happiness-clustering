@@ -93,3 +93,23 @@ _Avoid_: Black-box model, Built-in clusterer
 **Reproducible Path (Đường dẫn tái lập độc lập môi trường)**:
 Cơ chế quản lý đường dẫn mã nguồn và dữ liệu dựa trên gốc thư mục dự án (`Path(__file__).resolve()`) hoặc đường dẫn tương đối, bảo đảm toàn bộ pipeline khai phá dữ liệu chạy lại được từ đầu trên bất kỳ máy cá nhân hay môi trường máy chấm nào mà không bị lỗi hardcoded paths.
 _Avoid_: Đường dẫn tuyệt đối, C:\Users\..., /home/..., hardcoded path
+
+---
+
+## Submission & Quality Invariants (Quy chuẩn nộp bài & Kiểm soát chất lượng)
+
+**Rubric 10.0 (Cơ cấu thang điểm toàn diện đồ án)**:
+Cơ cấu điểm chính thức theo hướng dẫn của giảng viên: Báo cáo Word chiếm 6,0 điểm (3,0đ Nội dung 5 Chương + 3,0đ Hình thức chuẩn); Mã nguồn / Notebook Run All chiếm 2,0 điểm; Video báo cáo chiếm 2,0 điểm.
+_Avoid_: Thang điểm cũ, chia điểm không rõ ràng
+
+**Anti-AI Writing Style (Văn phong người thật thực chứng)**:
+Quy chuẩn biên soạn báo cáo Word dựa 100% trên trải nghiệm nghiên cứu và thực nghiệm của sinh viên, đi thẳng vào bản chất kỹ thuật, số liệu cụ thể và quá trình thử-sai, loại bỏ hoàn toàn các câu từ sáo rỗng, phóng đại, từ nối công thức và cấu trúc nhân tạo của AI để tránh bị chế tài 0đ nội dung.
+_Avoid_: Văn phong AI, câu từ sáo rỗng, triết lý thiếu số liệu
+
+**Human-Centric Commit Protocol (Quy chuẩn Git commit thuần người thật)**:
+Nguyên tắc cam kết thông điệp Git commit thuần túy phản ánh công việc kỹ thuật do chính các thành viên sinh viên (Trường, Trí, Trung) thực hiện; tuyệt đối không chứa bất kỳ từ khóa hay dấu vết nào của AI/bot (như `AI`, `bot`, `LLM`, `prompt`, `agent`, `tự động sinh`, `AI viết báo cáo`).
+_Avoid_: Commit chứa từ khóa AI, bot commit, thông điệp tự động
+
+**Video Presentation Rule (Quy tắc Video thuyết trình <= 12 phút)**:
+Yêu cầu bắt buộc video báo cáo đồ án không vượt quá 12 phút, link truy cập trực tiếp không yêu cầu cấp quyền (được ghi tại trang bìa và phụ lục Word), và cả 3 thành viên đều tham gia trình bày với thời lượng cân bằng.
+_Avoid_: Video quá 12 phút, link Google Drive riêng tư, chỉ một thành viên thuyết trình

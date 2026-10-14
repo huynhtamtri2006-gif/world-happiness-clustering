@@ -20,7 +20,7 @@
 | 7 | Ghép cụm liên năm | Ghép tham lam theo khoảng cách tâm cụm (đã chuẩn hóa), hoà thì xét `happiness_score` trung bình |
 | 8 | Bảng dịch chuyển cụm | **Chính thức trong báo cáo**: bảng 156 quốc gia × 5 năm |
 | 9 | Kiểm chứng | `scripts/verify_scratch_implementations.py` assert đối chứng sklearn/scipy + notebook chạy sạch bằng nbconvert |
-| 10 | Báo cáo Word | Agent soạn đầy đủ từ số liệu thật; **mỗi thành viên biên tập và ký xác nhận mục của mình**; markdown là bản gốc, build `.docx` bằng **backend OOXML thuần Python** (máy hiện không có mạng tới PyPI nên chưa cài được `python-docx`; backend này đã kiểm chứng tạo được file hợp lệ) |
+| 10 | Báo cáo Word & Quy chuẩn nộp bài | Nhóm sinh viên trực tiếp biên soạn theo cấu trúc **5 Chương chuẩn hóa**; tuân thủ nghiêm ngặt văn phong người thật thực chứng (**Anti-AI Writing Style**), truy vết 100% số liệu về CSV; nộp gói nén duy nhất `Nhom12_WorldHappinessClustering.zip` gồm `Nhom12_BaoCao.docx`, video báo cáo $\le$ 12 phút (link mở trực tiếp ở trang bìa và phụ lục) và toàn bộ mã nguồn |
 | 11 | Phân công | Trường 34% — Trí 33% — Trung 33% |
 | 12 | Nơi lưu kế hoạch | GitHub Issue trên `world-happiness-clustering` + bản markdown trong repo |
 
@@ -30,7 +30,7 @@
 2. 4 notebook chạy sạch; sinh `data/interim/happiness_merged.csv`, `data/processed/**`, `reports/figures/*.png` (300 DPI), `reports/tables/*.csv`.
 3. `streamlit run app/app.py` chạy, 4 tab thật; đổi năm / thuật toán / scaler / `k` thì số liệu và metric đổi theo (không hardcode).
 4. `models/*.json` chứa tâm cụm + tham số scaler + metric cho từng năm, đọc lại được.
-5. Bộ nộp đủ: `Bao_cao_De_tai_16_Nhom_12.docx`, `Slide_De_tai_16_Nhom_12.pptx`, `ke_hoach_nhom.md`, `phan_cong_cong_viec.md`, README hướng dẫn chạy.
+5. Bộ nộp đủ: Gói nén duy nhất `Nhom12_WorldHappinessClustering.zip` gồm `Nhom12_BaoCao.docx` (5 Chương chuẩn hóa), video $\le$ 12 phút (cả 3 thành viên thuyết trình, link mở trực tiếp ở bìa và phụ lục), `Slide_De_tai_16_Nhom_12.pptx`, `ke_hoach_nhom.md`, `phan_cong_cong_viec.md`, toàn bộ mã nguồn và README hướng dẫn chạy.
 6. Checklist ký xác nhận nội dung báo cáo: cả 3 thành viên đã đọc, đối chiếu số với `reports/tables/*.csv` và giải thích được mục mình phụ trách.
 
 ### Hiện trạng repo (đã kiểm chứng)
@@ -66,10 +66,11 @@
 - Mỗi người phải giải thích được công thức Silhouette + profile một cụm của **một năm bất kỳ** + một đoạn code bất kỳ trong `src/models/clustering.py`.
 - Mỗi PR bắt buộc một người khác review.
 
-**Cam kết biên tập và truy vết số liệu (vì agent soạn nội dung báo cáo):**
+**Cam kết biên tập, truy vết số liệu và loại bỏ dấu hiệu AI:**
 
-- Mọi con số trong `bao_cao.md` phải truy được về một dòng trong `reports/tables/*.csv` hoặc một hình trong `reports/figures/`.
-- Mỗi thành viên biên tập các mục mình phụ trách, rồi **ký xác nhận** vào checklist ở `phan_cong_cong_viec.md`: đã đọc, đã đối chiếu số, giải thích được.
+- Mọi con số trong Báo cáo Word 5 Chương phải truy được về một dòng trong `reports/tables/*.csv` hoặc một hình trong `reports/figures/`.
+- Tuân thủ triệt để quy chuẩn **Anti-AI Writing Style**: không mở bài sáo rỗng, không tính từ phóng đại, không dùng từ nối máy móc lặp lại; thể hiện rõ bản chất kỹ thuật và quá trình thử-sai của sinh viên thực hiện.
+- Mỗi thành viên biên tập các chương mục mình phụ trách, rồi **ký xác nhận** vào checklist ở `phan_cong_cong_viec.md`: đã đọc, đã đối chiếu số, giải thích được.
 - Trước khi nộp, mỗi người phải chạy lại được notebook của phần mình và trả lời 20 câu vấn đáp.
 
 ---
@@ -122,19 +123,19 @@
 | Ngày | Trường | Trí | Trung |
 |:--:|:--|:--|:--|
 | 22 (họp) | Chốt tiến độ M3; chốt phạm vi tối thiểu của báo cáo nếu trễ | Rà `src/models/__init__.py` export đủ; thêm docstring công thức | `app/app.py`: 4 tab (radar theo năm, bản đồ ISO-3, tra cứu quốc gia, gán quốc gia mới) + metric theo cấu hình + cache `mtime` |
-| 23 | Viết `build_report.py` (trang bìa, 12 mục, chèn bảng/hình, chú thích Hình/Bảng) | Kiểm app không dùng sklearn; kiểm đổi năm/thuật toán/scaler/`k` ra số khác nhau | Viết `slides.md` + `build_slides.py` (12-15 slide, 8-10 phút) |
-| 24 | Agent soạn `bao_cao.md` đầy đủ 12 mục từ CSV; build `.docx` | Review chương phương pháp và kết quả | Review chương diễn giải, demo, kết luận |
-| 25 | Ghép bản cuối; chạy `build_report.py`; kiểm số trang ~50 | Biên tập + ký xác nhận mục 5-7 | Biên tập + ký xác nhận mục 8-11 |
-| 26 | Biên tập + ký xác nhận mục 1-4; kiểm lại toàn bộ số liệu | Kiểm app lần cuối, sửa finding | Kiểm slide khớp báo cáo; chạy demo thử |
+| 23 | Chuẩn bị khung Báo cáo Word (`build_report.py`, trang bìa, 5 Chương chuẩn hóa, chèn bảng/hình) | Kiểm app không dùng sklearn; kiểm đổi năm/thuật toán/scaler/`k` ra số khác nhau | Viết `slides.md` + `build_slides.py` (12-15 slide, khớp kịch bản video) |
+| 24 | Soạn thảo Báo cáo Word `Nhom12_BaoCao.docx` theo 5 Chương chuẩn hóa từ kết quả thực nghiệm | Soát lại Chương 3 (Phương pháp) và Chương 4 (Kết quả) | Soát lại Chương 4 (Diễn giải), demo và Chương 5 (Kết luận) |
+| 25 | Ghép bản cuối; rà soát định dạng, hình/bảng và số liệu | Biên tập + ký xác nhận Chương 3 | Biên tập + ký xác nhận Chương 4, 5 |
+| 26 | Biên tập + ký xác nhận Chương 1, 2; kiểm tra số liệu khớp 100% | Kiểm app lần cuối, chuẩn bị phần quay demo video | Hoàn thiện slide, tập dượt quay video $\le$ 12 phút |
 
-### M5 — Đóng băng, rehearsal, nộp (Ngày 27-28)
+### M5 — Đóng băng, quay video, rehearsal, nộp (Ngày 27-28)
 
 | Ngày | Trường | Trí | Trung |
 |:--:|:--|:--|:--|
-| 27 | Chạy lại toàn bộ từ đầu trên máy sạch: 4 notebook + verify + app + build report/slide; tick checklist 10 mục Mục 5 đề cương | Bị hỏi vấn đáp phần tiền xử lý + chất lượng dữ liệu | Bị hỏi vấn đáp phần phương pháp/tham số; điều hành rehearsal |
-| 28 | Merge `main`, tag `v1.0`, push; nộp Word/Slide + link repo | Bị hỏi vấn đáp phần demo | Bị hỏi vấn đáp phần kết luận/hạn chế; chạy demo 2 lần |
+| 27 | Chạy lại toàn bộ từ đầu trên môi trường sạch: 4 notebook + verify + app; phối hợp quay video báo cáo $\le$ 12 phút (cả 3 thành viên tham gia); gắn link video mở trực tiếp vào bìa và phụ lục Word | Tham gia quay video (phần thuật toán & thực nghiệm); trả lời vấn đáp phần phương pháp | Tham gia quay video (phần diễn giải & demo app); điều hành rehearsal |
+| 28 | Đóng gói duy nhất `Nhom12_WorldHappinessClustering.zip`; merge `main`, push GitHub; nộp bài | Bị hỏi vấn đáp phần demo | Bị hỏi vấn đáp phần kết luận/hạn chế |
 
-**Nhịp chung:** họp 1 buổi/tuần vào đầu tuần (Ngày 1, 8, 15, 22), mỗi buổi 45 phút: chốt tiến độ mốc trước, gỡ blocker, chốt việc tuần. Ngoài buổi họp, trao đổi qua PR + checklist trong tài liệu này. Commit tiếng Việt (ví dụ `feat: tự cài đặt Ward linkage và DBSCAN from scratch`); nhánh `feat/<tên>-<nội-dung>` → PR → chỉ nhóm trưởng merge `main`.
+**Nhịp chung:** họp 1 buổi/tuần vào đầu tuần (Ngày 1, 8, 15, 22), mỗi buổi 45 phút: chốt tiến độ mốc trước, gỡ blocker, chốt việc tuần. Ngoài buổi họp, trao đổi qua PR + checklist trong tài liệu này. Commit bằng Tiếng Việt theo chuẩn **Human-Centric Commit Protocol** (ví dụ: `thuật toán: tự cài đặt Ward linkage và DBSCAN from scratch`), tuyệt đối không nhắc đến AI hay bot. Nhánh `feat/<tên>-<nội-dung>` → PR → chỉ nhóm trưởng merge `main`.
 
 ---
 
@@ -239,9 +240,8 @@ Tổng 12 hình cho báo cáo; CSV là nguồn số liệu duy nhất, mọi con
 | Rủi ro | Giảm thiểu |
 |:--|:--|
 | 5 năm × 5 cấu hình × quét DBSCAN quá nhiều bảng/hình | Cố định 12 hình và 5 file CSV; phần còn lại để trong phụ lục; cache kết quả vào CSV/JSON |
-| Không cài được `python-docx`/`python-pptx` (đã xác nhận: `pypi.org` không kết nối, `pip install` treo) | Dùng backend OOXML thuần Python đã kiểm chứng tạo được `.docx` hợp lệ (zip + XML chuẩn, có heading style, bảng, tiếng Việt); `python-docx` chỉ là tuỳ chọn khi nhóm cài được; phương án cuối là dán markdown vào file Word mẫu của trường |
 | Ward chậm | Lance–Williams + cache; hạ phạm vi ARI nếu vượt 30 giây/lần |
-| Agent soạn báo cáo nhưng nhóm không nắm nội dung | Truy vết số liệu về CSV + ký xác nhận từng mục + rehearsal đổi vai + 20 câu vấn đáp |
+| Báo cáo Word bị nghi ngờ có dấu hiệu văn phong AI dẫn đến mất điểm nội dung (3,0đ) | Tuân thủ triệt để Anti-AI Writing Style, viết từ góc nhìn sinh viên KHDL thực chứng, bám sát số liệu định lượng, mô tả quá trình thử-sai, truy vết 100% về CSV + ký xác nhận từng mục |
 | `k*` khác nhau giữa các năm gây khó kể chuyện | Dùng `k=3` làm cấu hình đối chứng xuyên năm; `k*` là kết quả chính theo từng năm |
 | Trễ tiến độ ở M3 | Đường găng tối thiểu: K-Means/Standard + Ward/Standard × 5 năm + `k=3` đối chứng; phần quét DBSCAN đầy đủ và ARI lùi sang M4 |
 | Conflict notebook giữa 3 người | 1 owner/notebook tại một thời điểm |
