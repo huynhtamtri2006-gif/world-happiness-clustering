@@ -77,7 +77,7 @@ def plot_cluster_radar(
     angles = np.linspace(0, 2 * np.pi, num_vars, endpoint=False).tolist()
     angles += angles[:1]
 
-    fig, ax = plt.subplots(figsize=(8, 8), subplot_kw=dict(polar=True))
+    fig, ax = plt.subplots(figsize=(9, 8.5), subplot_kw=dict(polar=True))
 
     for idx, row in cluster_means.iterrows():
         values = row[features].tolist()
@@ -87,9 +87,10 @@ def plot_cluster_radar(
 
     ax.set_theta_offset(np.pi / 2)
     ax.set_theta_direction(-1)
-    ax.set_thetagrids(np.degrees(angles[:-1]), features, fontsize=10)
-    ax.set_title("Biểu đồ Radar so sánh các yếu tố giữa các cụm", y=1.08, fontsize=14)
-    ax.legend(loc="upper right", bbox_to_anchor=(1.25, 1.1))
+    ax.set_thetagrids(np.degrees(angles[:-1]), features, fontsize=10.5, fontweight="bold")
+    ax.tick_params(pad=14)
+    ax.set_title("Biểu đồ Radar so sánh các yếu tố giữa các cụm", y=1.10, fontsize=14, fontweight="bold")
+    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.08), ncol=3, frameon=True)
 
     if save_path:
         plt.savefig(save_path, dpi=300, bbox_inches="tight")

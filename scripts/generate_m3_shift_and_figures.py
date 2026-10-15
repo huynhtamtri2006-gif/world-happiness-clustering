@@ -180,7 +180,7 @@ def main():
     plt.rcParams["font.family"] = "sans-serif"
 
     # Hình A: Biểu đồ xu hướng số lượng quốc gia theo từng cụm (cluster_count_trend.png)
-    plt.figure(figsize=(10, 6))
+    plt.figure(figsize=(10, 6.2))
     for c_id, color in [(0, "#2ecc71"), (1, "#f39c12"), (2, "#e74c3c")]:
         sub = df_trends[df_trends["cluster_id"] == c_id]
         plt.plot(sub["year"], sub["country_count"], marker="o", linewidth=2.5, markersize=8,
@@ -188,16 +188,16 @@ def main():
         for _, r in sub.iterrows():
             plt.text(r["year"], r["country_count"] + 0.8, f"{int(r['country_count'])}", ha="center", fontsize=10, fontweight="bold")
             
-    plt.title("Xu Hướng Số Lượng Quốc Gia Trong Từng Cụm (2015–2019)", fontsize=14, pad=15, fontweight="bold")
+    plt.title("Xu Hướng Số Lượng Quốc Gia Trong Từng Cụm (2015–2019)", fontsize=14, pad=35, fontweight="bold")
     plt.xlabel("Năm Khảo Sát", fontsize=12)
     plt.ylabel("Số Lượng Quốc Gia", fontsize=12)
-    plt.ylim(20, 95)
+    plt.ylim(15, 95)
     plt.xticks(years)
-    plt.legend(loc="upper right", frameon=True, fontsize=10)
+    plt.legend(loc="lower center", bbox_to_anchor=(0.5, 1.02), ncol=3, frameon=True, fontsize=10)
     plt.tight_layout()
-    plt.savefig(figures_dir / "cluster_count_trend.png", dpi=300)
+    plt.savefig(figures_dir / "cluster_count_trend.png", dpi=300, bbox_inches="tight")
     plt.close()
-    print("Đã xuất hình: cluster_count_trend.png (300 DPI)")
+    print("Đã xuất hình: cluster_count_trend.png (300 DPI, legend đỉnh thoáng)")
 
     # Hình B: Lưới PCA 2D phân bố cụm 5 năm (pca_clusters_grid.png)
     fig, axes = plt.subplots(1, 5, figsize=(22, 4.5), sharey=True)
@@ -226,14 +226,14 @@ def main():
         ax.grid(True, linestyle="--", alpha=0.5)
 
     fig.suptitle("Lưới Phân Bố 3 Cụm Quốc Gia Trên Không Gian 2D PCA (2015–2019)", fontsize=15, y=1.03, fontweight="bold")
-    fig.legend(loc="upper center", bbox_to_anchor=(0.5, 0.02), ncol=3, frameon=True, fontsize=11)
+    fig.legend(loc="upper center", bbox_to_anchor=(0.5, -0.06), ncol=3, frameon=True, fontsize=11)
     plt.tight_layout()
     plt.savefig(figures_dir / "pca_clusters_grid.png", dpi=300, bbox_inches="tight")
     plt.close()
-    print("Đã xuất hình: pca_clusters_grid.png (300 DPI)")
+    print("Đã xuất hình: pca_clusters_grid.png (300 DPI, legend đáy thoáng)")
 
     # Hình C: Hậu kiểm Happiness Score theo cụm (validation_happiness_score_by_cluster.png)
-    plt.figure(figsize=(10, 6))
+    fig, ax = plt.subplots(figsize=(10.5, 6.2))
     all_aligned = pd.concat([aligned_dfs[y] for y in years], ignore_index=True)
     all_aligned["cluster_label"] = all_aligned["canonical_cluster"].map(cluster_names)
     
@@ -242,26 +242,27 @@ def main():
         x="year",
         y="happiness_score",
         hue="cluster_label",
-        palette=["#2ecc71", "#f39c12", "#e74c3c"]
+        palette=["#2ecc71", "#f39c12", "#e74c3c"],
+        ax=ax
     )
-    plt.title("Hậu Kiểm Độc Lập: Phân Bố Điểm Hạnh Phúc (Happiness Score) Giữa 3 Cụm (2015–2019)", fontsize=13, pad=15, fontweight="bold")
-    plt.xlabel("Năm Khảo Sát", fontsize=11)
-    plt.ylabel("Điểm Hạnh Phúc (Happiness Score)", fontsize=11)
-    plt.legend(title="Phân Cụm Tự Nhiên", loc="lower right", frameon=True, fontsize=9)
+    ax.set_title("Hậu Kiểm Độc Lập: Phân Bố Điểm Hạnh Phúc (Happiness Score) Giữa 3 Cụm (2015–2019)", fontsize=13, pad=38, fontweight="bold")
+    ax.set_xlabel("Năm Khảo Sát", fontsize=11)
+    ax.set_ylabel("Điểm Hạnh Phúc (Happiness Score)", fontsize=11)
+    ax.set_ylim(2.4, 8.2)
+    ax.legend(loc="lower center", bbox_to_anchor=(0.5, 1.01), ncol=3, frameon=True, fontsize=9.5)
     plt.tight_layout()
-    plt.savefig(figures_dir / "validation_happiness_score_by_cluster.png", dpi=300)
+    plt.savefig(figures_dir / "validation_happiness_score_by_cluster.png", dpi=300, bbox_inches="tight")
     plt.close()
-    print("Đã xuất hình: validation_happiness_score_by_cluster.png (300 DPI)")
+    print("Đã xuất hình: validation_happiness_score_by_cluster.png (300 DPI, legend đỉnh thoáng)")
 
     # Hình D: Radar chart chân dung 3 cụm (radar_chart_clusters.png)
-    feature_vn = ["GDP/người", "Hỗ trợ XH", "Tuổi thọ", "Tự do", "Hào phóng", "Chống tham nhũng"]
     mean_profiles = df_interim.merge(all_aligned[["country", "year", "canonical_cluster"]], on=["country", "year"]).groupby("canonical_cluster")[FEATURE_COLUMNS].mean()
     
     num_vars = len(FEATURE_COLUMNS)
     angles = np.linspace(0, 2 * np.pi, num_vars, endpoint=False).tolist()
     angles += angles[:1]
     
-    fig, ax = plt.subplots(figsize=(8, 8), subplot_kw=dict(polar=True))
+    fig, ax = plt.subplots(figsize=(9, 9.2), subplot_kw=dict(polar=True))
     radar_colors = {0: "#2ecc71", 1: "#f39c12", 2: "#e74c3c"}
     
     for idx, row in mean_profiles.iterrows():
@@ -270,25 +271,33 @@ def main():
         ax.plot(angles, vals, linewidth=2.5, label=cluster_names[idx], color=radar_colors[idx])
         ax.fill(angles, vals, alpha=0.15, color=radar_colors[idx])
         
+    radar_labels = [
+        "gdp_per_capita",
+        "social_support",
+        "healthy_life_\nexpectancy",
+        "freedom",
+        "generosity",
+        "corruption_\nperception"
+    ]
     ax.set_theta_offset(np.pi / 2)
     ax.set_theta_direction(-1)
-    ax.set_thetagrids(np.degrees(angles[:-1]), feature_vn, fontsize=11, fontweight="bold")
-    ax.set_title("Chân Dung Radar 6 Yếu Tố Giữa 3 Cụm Quốc Gia (Trung Bình 5 Năm)", y=1.08, fontsize=14, fontweight="bold")
-    ax.legend(loc="upper right", bbox_to_anchor=(1.3, 1.1), frameon=True)
+    ax.set_ylim(0, 1.5)
+    ax.set_thetagrids(np.degrees(angles[:-1]), radar_labels, fontsize=10, fontweight="bold")
+    ax.tick_params(pad=18)
+    ax.set_title("Chân Dung Radar 6 Yếu Tố Giữa 3 Cụm Quốc Gia (Trung Bình 5 Năm)", y=1.14, fontsize=14, fontweight="bold")
+    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.13), ncol=3, frameon=True, fontsize=10)
     plt.tight_layout()
     plt.savefig(figures_dir / "radar_chart_clusters.png", dpi=300, bbox_inches="tight")
     plt.close()
-    print("Đã xuất hình: radar_chart_clusters.png (300 DPI)")
+    print("Đã xuất hình: radar_chart_clusters.png (300 DPI, tên thuộc tính tiếng Anh, không chạm viền)")
 
-    # Hình E, F, G: EDA figures nếu chưa có
-    for fig_name, draw_fn in [
-        ("feature_distributions.png", lambda: _draw_distributions(df_interim)),
-        ("correlation_heatmap.png", lambda: _draw_correlation(df_interim)),
-        ("boxplots_outliers.png", lambda: _draw_outliers(df_interim))
-    ]:
-        if not (figures_dir / fig_name).exists():
-            draw_fn()
-            print(f"Đã xuất hình EDA bổ sung: {fig_name} (300 DPI)")
+    # Hình E, F, G: EDA figures (luôn cập nhật mới nhất)
+    _draw_distributions(df_interim)
+    print("Đã xuất hình EDA: feature_distributions.png (300 DPI)")
+    _draw_correlation(df_interim)
+    print("Đã xuất hình EDA: correlation_heatmap.png (300 DPI)")
+    _draw_outliers(df_interim)
+    print("Đã xuất hình EDA: boxplots_outliers.png (300 DPI)")
 
     print("\n=== HOÀN TẤT SINH DỮ LIỆU VÀ TRỰC QUAN HÓA M3 ===")
 
@@ -303,24 +312,30 @@ def _draw_distributions(df):
     plt.close()
 
 def _draw_correlation(df):
-    plt.figure(figsize=(8, 6))
+    plt.figure(figsize=(8.5, 6.5))
     corr = df[FEATURE_COLUMNS + ["happiness_score"]].corr()
     sns.heatmap(corr, annot=True, fmt=".2f", cmap="coolwarm", cbar=True)
     plt.title("Ma Trận Tương Quan Pearson (6 Yếu Tố & Điểm Hạnh Phúc)", fontsize=12, pad=12, fontweight="bold")
     plt.tight_layout()
-    plt.savefig(figures_dir / "correlation_heatmap.png", dpi=300)
+    plt.savefig(figures_dir / "correlation_heatmap.png", dpi=300, bbox_inches="tight")
     plt.close()
 
 def _draw_outliers(df):
-    plt.figure(figsize=(12, 6))
-    # Min-max scale để vẽ chung boxplot
+    plt.figure(figsize=(12, 6.2))
+    # Min-max scale để vẽ chung boxplot trên cùng một thang đo [0, 1]
     sub = df[FEATURE_COLUMNS]
     scaled = (sub - sub.min()) / (sub.max() - sub.min())
-    sns.boxplot(data=scaled, palette="Set3")
-    plt.title("Biểu Đồ Hộp Phát Hiện Giá Trị Ngoại Lai (6 Đặc Trưng Sau Chuẩn Hóa)", fontsize=13, pad=12, fontweight="bold")
-    plt.xticks(rotation=20)
+    
+    flierprops = dict(marker="o", markersize=5.5, markerfacecolor="#e74c3c", markeredgecolor="#c0392b", alpha=0.7)
+    sns.boxplot(data=scaled, palette="Set2", flierprops=flierprops, linewidth=1.5)
+    
+    plt.title("Biểu Đồ Hộp Phát Hiện Giá Trị Ngoại Lai (6 Đặc Trưng Sau Chuẩn Hóa)", fontsize=13, pad=15, fontweight="bold")
+    plt.xlabel("Thuộc Tính Cơ Sở (Feature Columns)", fontsize=11, labelpad=10)
+    plt.ylabel("Giá Trị Chuẩn Hóa [0, 1]", fontsize=11)
+    plt.ylim(-0.05, 1.05)
+    plt.xticks(fontsize=10, rotation=15)
     plt.tight_layout()
-    plt.savefig(figures_dir / "boxplots_outliers.png", dpi=300)
+    plt.savefig(figures_dir / "boxplots_outliers.png", dpi=300, bbox_inches="tight")
     plt.close()
 
 if __name__ == "__main__":
