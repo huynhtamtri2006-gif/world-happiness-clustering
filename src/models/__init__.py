@@ -15,6 +15,7 @@ from .clustering import (
     evaluate_clustering,
     save_cluster_artifacts,
     load_cluster_artifacts,
+    match_clusters_greedy,
 )
 
 __all__ = [
@@ -34,4 +35,5 @@ __all__ = [
     "evaluate_clustering",
     "save_cluster_artifacts",
     "load_cluster_artifacts",
+    "match_clusters_greedy",
 ]

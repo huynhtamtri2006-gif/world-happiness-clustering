@@ -9,7 +9,7 @@ Mục đích:
 
 import math
 import random
-from typing import List, Dict, Tuple, Any
+from typing import List, Dict, Tuple, Any, Optional
 import numpy as np
 import pandas as pd
 
@@ -916,3 +916,80 @@ def load_cluster_artifacts(path):
 
     with Path(path).open("r", encoding="utf-8") as file:
         return json.load(file)
+
+
+# ==============================================================================
+# 8. GHÉP CỤM LIÊN NĂM THAM LAM (CROSS-YEAR CLUSTER MATCHING)
+# ==============================================================================
+
+def match_clusters_greedy(
+    centroids_a: Any,
+    centroids_b: Any,
+    scores_a: Optional[Any] = None,
+    scores_b: Optional[Any] = None,
+) -> Dict[int, int]:
+    """
+    Ghép cặp nhãn cụm giữa năm A (năm gốc) và năm B (năm kế tiếp) theo chiến lược tham lam.
+
+    Nguyên lý:
+    1. Tính khoảng cách Euclidean giữa tất cả các cặp tâm cụm (centroid) của năm A và năm B.
+    2. Sắp xếp các cặp theo khoảng cách tăng dần; nếu khoảng cách xấp xỉ bằng nhau (dung sai 1e-6),
+       dùng độ chênh lệch điểm hạnh phúc trung bình (happiness_score) làm tiêu chí phụ (tie-break).
+    3. Ghép tham lam từng cặp chưa được chọn: gán nhãn cụm của năm B về nhãn cụm tương ứng của năm A.
+
+    Tham số:
+    - centroids_a, centroids_b: Dict {cluster_id: coords} hoặc List/Array các tâm cụm.
+    - scores_a, scores_b: (Tùy chọn) Dict {cluster_id: score} hoặc List/Array điểm hạnh phúc trung bình.
+
+    Trả về:
+    - Dict[int, int]: Ánh xạ {cluster_id_b: cluster_id_a}.
+    """
+    # Chuẩn hóa tâm cụm về dạng dict {id: list_of_floats}
+    def _to_centroid_dict(c):
+        if isinstance(c, dict):
+            return {int(k): [float(v) for v in vals] for k, vals in c.items()}
+        if isinstance(c, (list, tuple, np.ndarray)):
+            return {i: [float(v) for v in row] for i, row in enumerate(c)}
+        raise TypeError("centroids phải là dict, list hoặc ndarray")
+
+    # Chuẩn hóa điểm số về dạng dict {id: float}
+    def _to_score_dict(s):
+        if s is None:
+            return None
+        if isinstance(s, dict):
+            return {int(k): float(v) for k, v in s.items()}
+        if isinstance(s, (list, tuple, np.ndarray, pd.Series)):
+            return {i: float(v) for i, v in enumerate(s)}
+        return None
+
+    dict_a = _to_centroid_dict(centroids_a)
+    dict_b = _to_centroid_dict(centroids_b)
+    sc_a = _to_score_dict(scores_a)
+    sc_b = _to_score_dict(scores_b)
+
+    # Tính toàn bộ các cặp (khoảng cách, chênh lệch điểm, id_a, id_b)
+    candidates = []
+    for id_a, cent_a in dict_a.items():
+        for id_b, cent_b in dict_b.items():
+            dist = euclidean_distance(cent_a, cent_b)
+            score_diff = 0.0
+            if sc_a is not None and sc_b is not None:
+                if id_a in sc_a and id_b in sc_b:
+                    score_diff = abs(sc_a[id_a] - sc_b[id_b])
+            candidates.append((dist, score_diff, id_a, id_b))
+
+    # Sắp xếp ưu tiên: khoảng cách nhỏ nhất -> chênh lệch điểm nhỏ nhất
+    candidates.sort(key=lambda item: (round(item[0], 6), round(item[1], 6)))
+
+    mapping = {}
+    matched_a = set()
+    matched_b = set()
+
+    for dist, score_diff, id_a, id_b in candidates:
+        if id_a not in matched_a and id_b not in matched_b:
+            mapping[id_b] = id_a
+            matched_a.add(id_a)
+            matched_b.add(id_b)
+
+    return mapping
+

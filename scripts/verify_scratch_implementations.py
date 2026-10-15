@@ -30,6 +30,7 @@ from src.models import (
     calculate_silhouette_score_simple,
     load_cluster_artifacts,
     save_cluster_artifacts,
+    match_clusters_greedy,
 )
 from src.models.clustering import euclidean_distance
 from src.features.feature_engineering import SimplePCA
@@ -158,6 +159,12 @@ with tempfile.TemporaryDirectory() as temp_dir:
         and artifact["model"]["centroids"] is not None
     )
     check("JSON artifact round-trip", json_ok)
+
+# Ghép cụm liên năm tham lam
+centroids_a = [[0.0, 0.0], [5.0, 5.0], [10.0, 10.0]]
+centroids_b = [[10.1, 9.9], [0.1, -0.1], [5.2, 4.9]]
+mapping_test = match_clusters_greedy(centroids_a, centroids_b)
+check("match_clusters_greedy", mapping_test == {0: 2, 1: 0, 2: 1})
 
 # Quy tắc vàng và interim
 feature_columns = [
