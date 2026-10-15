@@ -1,0 +1,158 @@
+country,year,happiness_score,algorithm,cluster_k3
+Denmark,2016,7.526,Ward,0
+Switzerland,2016,7.509,Ward,0
+Iceland,2016,7.501,Ward,0
+Norway,2016,7.498,Ward,0
+Finland,2016,7.413,Ward,0
+Canada,2016,7.404,Ward,0
+Netherlands,2016,7.339,Ward,0
+New Zealand,2016,7.334,Ward,0
+Australia,2016,7.313,Ward,0
+Sweden,2016,7.291,Ward,0
+Israel,2016,7.267,Ward,1
+Austria,2016,7.119,Ward,0
+United States,2016,7.104,Ward,0
+Costa Rica,2016,7.087,Ward,1
+Puerto Rico,2016,7.039,Ward,1
+Germany,2016,6.994,Ward,0
+Brazil,2016,6.952,Ward,1
+Belgium,2016,6.929,Ward,0
+Ireland,2016,6.907,Ward,0
+Luxembourg,2016,6.871,Ward,0
+Mexico,2016,6.778,Ward,1
+Singapore,2016,6.739,Ward,0
+United Kingdom,2016,6.725,Ward,0
+Chile,2016,6.705,Ward,1
+Panama,2016,6.701,Ward,1
+Argentina,2016,6.65,Ward,1
+Czech Republic,2016,6.596,Ward,1
+United Arab Emirates,2016,6.573,Ward,0
+Uruguay,2016,6.545,Ward,1
+Malta,2016,6.488,Ward,0
+Colombia,2016,6.481,Ward,1
+France,2016,6.478,Ward,1
+Thailand,2016,6.474,Ward,2
+Saudi Arabia,2016,6.379,Ward,1
+Taiwan,2016,6.379,Ward,1
+Qatar,2016,6.375,Ward,0
+Spain,2016,6.361,Ward,1
+Algeria,2016,6.355,Ward,1
+Guatemala,2016,6.324,Ward,1
+Suriname,2016,6.269,Ward,1
+Kuwait,2016,6.239,Ward,1
+Bahrain,2016,6.218,Ward,1
+Trinidad and Tobago,2016,6.168,Ward,1
+Venezuela,2016,6.084,Ward,1
+Slovakia,2016,6.078,Ward,1
+El Salvador,2016,6.068,Ward,1
+Malaysia,2016,6.005,Ward,1
+Nicaragua,2016,5.992,Ward,1
+Uzbekistan,2016,5.987,Ward,0
+Italy,2016,5.977,Ward,1
+Ecuador,2016,5.976,Ward,1
+Belize,2016,5.956,Ward,1
+Japan,2016,5.921,Ward,1
+Kazakhstan,2016,5.919,Ward,1
+Moldova,2016,5.897,Ward,1
+Russia,2016,5.856,Ward,1
+Poland,2016,5.835,Ward,1
+South Korea,2016,5.835,Ward,1
+Bolivia,2016,5.822,Ward,1
+Lithuania,2016,5.813,Ward,1
+Belarus,2016,5.802,Ward,1
+North Cyprus,2016,5.771,Ward,1
+Slovenia,2016,5.768,Ward,1
+Peru,2016,5.743,Ward,1
+Turkmenistan,2016,5.658,Ward,1
+Mauritius,2016,5.648,Ward,1
+Libya,2016,5.615,Ward,1
+Latvia,2016,5.56,Ward,1
+Cyprus,2016,5.546,Ward,1
+Paraguay,2016,5.538,Ward,1
+Romania,2016,5.528,Ward,1
+Estonia,2016,5.517,Ward,1
+Jamaica,2016,5.51,Ward,1
+Croatia,2016,5.488,Ward,1
+Hong Kong,2016,5.458,Ward,0
+Somalia,2016,5.44,Ward,2
+Kosovo,2016,5.401,Ward,1
+Turkey,2016,5.389,Ward,1
+Indonesia,2016,5.314,Ward,2
+Jordan,2016,5.303,Ward,1
+Azerbaijan,2016,5.291,Ward,1
+Philippines,2016,5.279,Ward,1
+China,2016,5.245,Ward,1
+Bhutan,2016,5.196,Ward,2
+Kyrgyzstan,2016,5.185,Ward,1
+Serbia,2016,5.177,Ward,1
+Bosnia and Herzegovina,2016,5.163,Ward,1
+Montenegro,2016,5.161,Ward,1
+Dominican Republic,2016,5.155,Ward,1
+Morocco,2016,5.151,Ward,2
+Hungary,2016,5.145,Ward,1
+Pakistan,2016,5.132,Ward,2
+Lebanon,2016,5.129,Ward,1
+Portugal,2016,5.123,Ward,1
+North Macedonia,2016,5.121,Ward,1
+Vietnam,2016,5.061,Ward,1
+Somaliland,2016,5.057,Ward,2
+Tunisia,2016,5.045,Ward,2
+Greece,2016,5.033,Ward,1
+Tajikistan,2016,4.996,Ward,2
+Mongolia,2016,4.907,Ward,1
+Laos,2016,4.876,Ward,2
+Nigeria,2016,4.875,Ward,2
+Honduras,2016,4.871,Ward,1
+Iran,2016,4.813,Ward,1
+Zambia,2016,4.795,Ward,2
+Nepal,2016,4.793,Ward,2
+Palestinian Territories,2016,4.754,Ward,1
+Albania,2016,4.655,Ward,1
+Bangladesh,2016,4.643,Ward,2
+Sierra Leone,2016,4.635,Ward,2
+Iraq,2016,4.575,Ward,2
+Namibia,2016,4.574,Ward,1
+Cameroon,2016,4.513,Ward,2
+Ethiopia,2016,4.508,Ward,2
+South Africa,2016,4.459,Ward,1
+Sri Lanka,2016,4.415,Ward,2
+India,2016,4.404,Ward,2
+Myanmar,2016,4.395,Ward,2
+Egypt,2016,4.362,Ward,2
+Armenia,2016,4.36,Ward,1
+Kenya,2016,4.356,Ward,2
+Ukraine,2016,4.324,Ward,1
+Ghana,2016,4.276,Ward,2
+Congo (Kinshasa),2016,4.272,Ward,2
+Georgia,2016,4.252,Ward,2
+Congo (Brazzaville),2016,4.236,Ward,2
+Senegal,2016,4.219,Ward,2
+Bulgaria,2016,4.217,Ward,1
+Mauritania,2016,4.201,Ward,2
+Zimbabwe,2016,4.193,Ward,2
+Malawi,2016,4.156,Ward,2
+Sudan,2016,4.139,Ward,2
+Gabon,2016,4.121,Ward,2
+Mali,2016,4.073,Ward,2
+Haiti,2016,4.028,Ward,2
+Botswana,2016,3.974,Ward,1
+Comoros,2016,3.956,Ward,2
+Ivory Coast,2016,3.916,Ward,2
+Cambodia,2016,3.907,Ward,2
+Angola,2016,3.866,Ward,2
+Niger,2016,3.856,Ward,2
+South Sudan,2016,3.832,Ward,2
+Chad,2016,3.763,Ward,2
+Burkina Faso,2016,3.739,Ward,2
+Uganda,2016,3.739,Ward,2
+Yemen,2016,3.724,Ward,2
+Madagascar,2016,3.695,Ward,2
+Tanzania,2016,3.666,Ward,2
+Liberia,2016,3.622,Ward,2
+Guinea,2016,3.607,Ward,2
+Rwanda,2016,3.515,Ward,2
+Benin,2016,3.484,Ward,2
+Afghanistan,2016,3.36,Ward,2
+Togo,2016,3.303,Ward,2
+Syria,2016,3.069,Ward,2
+Burundi,2016,2.905,Ward,2
