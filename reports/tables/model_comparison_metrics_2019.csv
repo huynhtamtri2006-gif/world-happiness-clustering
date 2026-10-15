@@ -1,0 +1,4 @@
+Phương pháp,silhouette,davies_bouldin,calinski_harabasz,inertia,n_clusters,n_noise,sizes,Ưu điểm chính,Nhược điểm
+K-Means (k=3),0.3435723199901948,1.0702993605726794,86.02258153041254,440.57877573524075,3,0,28/82/46,"Hội tụ nhanh, cụm cân đối",Nhạy cảm khởi tạo tâm
+Hierarchical Ward (k=3),0.310382603441378,1.001875201332955,68.22692706316164,494.7524379395593,3,0,16/105/35,Cấu trúc dạng cây (Dendrogram),Độ phức tạp O(n^2)
+DBSCAN,-0.08088219149590135,1.6488712091129873,1.6033756676928963,576.8868701214927,2,32,121/3,Phát hiện nhiễu và cụm phi cầu,Khó chọn eps/min_samples
