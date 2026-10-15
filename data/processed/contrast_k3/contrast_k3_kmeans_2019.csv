@@ -1,0 +1,157 @@
+country,year,happiness_score,algorithm,cluster_k3
+Finland,2019,7.769,K-Means,0
+Denmark,2019,7.6,K-Means,0
+Norway,2019,7.554,K-Means,0
+Iceland,2019,7.494,K-Means,0
+Netherlands,2019,7.488,K-Means,0
+Switzerland,2019,7.48,K-Means,0
+Sweden,2019,7.343,K-Means,0
+New Zealand,2019,7.307,K-Means,0
+Canada,2019,7.278,K-Means,0
+Austria,2019,7.246,K-Means,0
+Australia,2019,7.228,K-Means,0
+Costa Rica,2019,7.167,K-Means,1
+Israel,2019,7.139,K-Means,1
+Luxembourg,2019,7.09,K-Means,0
+United Kingdom,2019,7.054,K-Means,0
+Ireland,2019,7.021,K-Means,0
+Germany,2019,6.985,K-Means,0
+Belgium,2019,6.923,K-Means,0
+United States,2019,6.892,K-Means,0
+Czech Republic,2019,6.852,K-Means,1
+United Arab Emirates,2019,6.825,K-Means,0
+Malta,2019,6.726,K-Means,0
+Mexico,2019,6.595,K-Means,1
+France,2019,6.592,K-Means,1
+Taiwan,2019,6.446,K-Means,1
+Chile,2019,6.444,K-Means,1
+Guatemala,2019,6.436,K-Means,1
+Saudi Arabia,2019,6.375,K-Means,1
+Qatar,2019,6.374,K-Means,0
+Spain,2019,6.354,K-Means,1
+Panama,2019,6.321,K-Means,1
+Brazil,2019,6.3,K-Means,1
+Uruguay,2019,6.293,K-Means,1
+Singapore,2019,6.262,K-Means,0
+El Salvador,2019,6.253,K-Means,1
+Italy,2019,6.223,K-Means,1
+Bahrain,2019,6.199,K-Means,0
+Slovakia,2019,6.198,K-Means,1
+Trinidad and Tobago,2019,6.192,K-Means,1
+Poland,2019,6.182,K-Means,1
+Uzbekistan,2019,6.174,K-Means,0
+Lithuania,2019,6.149,K-Means,1
+Colombia,2019,6.125,K-Means,1
+Slovenia,2019,6.118,K-Means,1
+Nicaragua,2019,6.105,K-Means,1
+Kosovo,2019,6.1,K-Means,1
+Argentina,2019,6.086,K-Means,1
+Romania,2019,6.07,K-Means,1
+Cyprus,2019,6.046,K-Means,1
+Ecuador,2019,6.028,K-Means,1
+Kuwait,2019,6.021,K-Means,1
+Thailand,2019,6.008,K-Means,0
+Latvia,2019,5.94,K-Means,1
+South Korea,2019,5.895,K-Means,1
+Estonia,2019,5.893,K-Means,1
+Jamaica,2019,5.89,K-Means,1
+Mauritius,2019,5.888,K-Means,1
+Japan,2019,5.886,K-Means,1
+Honduras,2019,5.86,K-Means,1
+Kazakhstan,2019,5.809,K-Means,1
+Bolivia,2019,5.779,K-Means,1
+Hungary,2019,5.758,K-Means,1
+Paraguay,2019,5.743,K-Means,1
+North Cyprus,2019,5.718,K-Means,1
+Peru,2019,5.697,K-Means,1
+Portugal,2019,5.693,K-Means,1
+Pakistan,2019,5.653,K-Means,2
+Russia,2019,5.648,K-Means,1
+Philippines,2019,5.631,K-Means,1
+Serbia,2019,5.603,K-Means,1
+Moldova,2019,5.529,K-Means,1
+Libya,2019,5.525,K-Means,1
+Montenegro,2019,5.523,K-Means,1
+Tajikistan,2019,5.467,K-Means,2
+Croatia,2019,5.432,K-Means,1
+Hong Kong,2019,5.43,K-Means,0
+Dominican Republic,2019,5.425,K-Means,1
+Bosnia and Herzegovina,2019,5.386,K-Means,1
+Turkey,2019,5.373,K-Means,1
+Malaysia,2019,5.339,K-Means,1
+Belarus,2019,5.323,K-Means,1
+Greece,2019,5.287,K-Means,1
+Mongolia,2019,5.285,K-Means,1
+North Macedonia,2019,5.274,K-Means,1
+Nigeria,2019,5.265,K-Means,2
+Kyrgyzstan,2019,5.261,K-Means,1
+Turkmenistan,2019,5.247,K-Means,1
+Algeria,2019,5.211,K-Means,1
+Morocco,2019,5.208,K-Means,1
+Azerbaijan,2019,5.208,K-Means,1
+Lebanon,2019,5.197,K-Means,1
+Indonesia,2019,5.192,K-Means,0
+China,2019,5.191,K-Means,1
+Vietnam,2019,5.175,K-Means,1
+Bhutan,2019,5.082,K-Means,0
+Cameroon,2019,5.044,K-Means,2
+Bulgaria,2019,5.011,K-Means,1
+Ghana,2019,4.996,K-Means,2
+Ivory Coast,2019,4.944,K-Means,2
+Nepal,2019,4.913,K-Means,2
+Jordan,2019,4.906,K-Means,1
+Benin,2019,4.883,K-Means,2
+Congo (Brazzaville),2019,4.812,K-Means,2
+Gabon,2019,4.799,K-Means,1
+Laos,2019,4.796,K-Means,2
+South Africa,2019,4.722,K-Means,1
+Albania,2019,4.719,K-Means,1
+Venezuela,2019,4.707,K-Means,1
+Cambodia,2019,4.7,K-Means,2
+Palestinian Territories,2019,4.696,K-Means,1
+Senegal,2019,4.681,K-Means,2
+Somalia,2019,4.668,K-Means,2
+Namibia,2019,4.639,K-Means,1
+Niger,2019,4.628,K-Means,2
+Burkina Faso,2019,4.587,K-Means,2
+Armenia,2019,4.559,K-Means,1
+Iran,2019,4.548,K-Means,1
+Guinea,2019,4.534,K-Means,2
+Georgia,2019,4.519,K-Means,1
+Gambia,2019,4.516,K-Means,2
+Kenya,2019,4.509,K-Means,2
+Mauritania,2019,4.49,K-Means,2
+Mozambique,2019,4.466,K-Means,2
+Tunisia,2019,4.461,K-Means,1
+Bangladesh,2019,4.456,K-Means,2
+Iraq,2019,4.437,K-Means,1
+Congo (Kinshasa),2019,4.418,K-Means,2
+Mali,2019,4.39,K-Means,2
+Sierra Leone,2019,4.374,K-Means,2
+Sri Lanka,2019,4.366,K-Means,1
+Myanmar,2019,4.36,K-Means,0
+Chad,2019,4.35,K-Means,2
+Ukraine,2019,4.332,K-Means,1
+Ethiopia,2019,4.286,K-Means,2
+Eswatini,2019,4.212,K-Means,2
+Uganda,2019,4.189,K-Means,2
+Egypt,2019,4.166,K-Means,1
+Zambia,2019,4.107,K-Means,2
+Togo,2019,4.085,K-Means,2
+India,2019,4.015,K-Means,2
+Liberia,2019,3.975,K-Means,2
+Comoros,2019,3.973,K-Means,2
+Madagascar,2019,3.933,K-Means,2
+Lesotho,2019,3.802,K-Means,2
+Burundi,2019,3.775,K-Means,2
+Zimbabwe,2019,3.663,K-Means,2
+Haiti,2019,3.597,K-Means,2
+Botswana,2019,3.488,K-Means,1
+Syria,2019,3.462,K-Means,2
+Malawi,2019,3.41,K-Means,2
+Yemen,2019,3.38,K-Means,2
+Rwanda,2019,3.334,K-Means,2
+Tanzania,2019,3.231,K-Means,2
+Afghanistan,2019,3.203,K-Means,2
+Central African Republic,2019,3.083,K-Means,2
+South Sudan,2019,2.853,K-Means,2

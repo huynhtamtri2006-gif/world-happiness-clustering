@@ -1,0 +1,156 @@
+country,year,happiness_score,algorithm,cluster_k3
+Finland,2018,7.632,K-Means,1
+Norway,2018,7.594,K-Means,1
+Denmark,2018,7.555,K-Means,1
+Iceland,2018,7.495,K-Means,1
+Switzerland,2018,7.487,K-Means,1
+Netherlands,2018,7.441,K-Means,1
+Canada,2018,7.328,K-Means,1
+New Zealand,2018,7.324,K-Means,1
+Sweden,2018,7.314,K-Means,1
+Australia,2018,7.272,K-Means,1
+United Kingdom,2018,7.19,K-Means,0
+Austria,2018,7.139,K-Means,1
+Costa Rica,2018,7.072,K-Means,0
+Ireland,2018,6.977,K-Means,1
+Germany,2018,6.965,K-Means,1
+Belgium,2018,6.927,K-Means,1
+Luxembourg,2018,6.91,K-Means,1
+United States,2018,6.886,K-Means,1
+Israel,2018,6.814,K-Means,1
+Czech Republic,2018,6.711,K-Means,0
+Malta,2018,6.627,K-Means,1
+France,2018,6.489,K-Means,0
+Mexico,2018,6.488,K-Means,0
+Chile,2018,6.476,K-Means,0
+Taiwan,2018,6.441,K-Means,0
+Panama,2018,6.43,K-Means,0
+Brazil,2018,6.419,K-Means,0
+Argentina,2018,6.388,K-Means,0
+Guatemala,2018,6.382,K-Means,0
+Uruguay,2018,6.379,K-Means,0
+Qatar,2018,6.374,K-Means,1
+Saudi Arabia,2018,6.371,K-Means,0
+Singapore,2018,6.343,K-Means,1
+Malaysia,2018,6.322,K-Means,0
+Spain,2018,6.31,K-Means,0
+Colombia,2018,6.26,K-Means,0
+Trinidad and Tobago,2018,6.192,K-Means,0
+Slovakia,2018,6.173,K-Means,0
+El Salvador,2018,6.167,K-Means,0
+Nicaragua,2018,6.141,K-Means,0
+Poland,2018,6.123,K-Means,0
+Bahrain,2018,6.105,K-Means,0
+Uzbekistan,2018,6.096,K-Means,1
+Kuwait,2018,6.083,K-Means,0
+Thailand,2018,6.072,K-Means,0
+Italy,2018,6.0,K-Means,0
+Ecuador,2018,5.973,K-Means,0
+Belize,2018,5.956,K-Means,0
+Lithuania,2018,5.952,K-Means,0
+Slovenia,2018,5.948,K-Means,0
+Romania,2018,5.945,K-Means,0
+Latvia,2018,5.933,K-Means,0
+Japan,2018,5.915,K-Means,0
+Mauritius,2018,5.891,K-Means,0
+Jamaica,2018,5.89,K-Means,0
+South Korea,2018,5.875,K-Means,0
+North Cyprus,2018,5.835,K-Means,0
+Russia,2018,5.81,K-Means,0
+Kazakhstan,2018,5.79,K-Means,0
+Cyprus,2018,5.762,K-Means,0
+Bolivia,2018,5.752,K-Means,0
+Estonia,2018,5.739,K-Means,0
+Paraguay,2018,5.681,K-Means,0
+Peru,2018,5.663,K-Means,0
+Kosovo,2018,5.662,K-Means,0
+Moldova,2018,5.64,K-Means,0
+Turkmenistan,2018,5.636,K-Means,0
+Hungary,2018,5.62,K-Means,0
+Libya,2018,5.566,K-Means,0
+Philippines,2018,5.524,K-Means,0
+Honduras,2018,5.504,K-Means,0
+Belarus,2018,5.483,K-Means,0
+Turkey,2018,5.483,K-Means,0
+Pakistan,2018,5.472,K-Means,2
+Hong Kong,2018,5.43,K-Means,1
+Portugal,2018,5.41,K-Means,0
+Serbia,2018,5.398,K-Means,0
+Greece,2018,5.358,K-Means,0
+Lebanon,2018,5.358,K-Means,0
+Montenegro,2018,5.347,K-Means,0
+Croatia,2018,5.321,K-Means,0
+Dominican Republic,2018,5.302,K-Means,0
+Algeria,2018,5.295,K-Means,0
+Morocco,2018,5.254,K-Means,0
+China,2018,5.246,K-Means,0
+Azerbaijan,2018,5.201,K-Means,0
+Tajikistan,2018,5.199,K-Means,2
+North Macedonia,2018,5.185,K-Means,0
+Jordan,2018,5.161,K-Means,0
+Nigeria,2018,5.155,K-Means,2
+Kyrgyzstan,2018,5.131,K-Means,0
+Bosnia and Herzegovina,2018,5.129,K-Means,0
+Mongolia,2018,5.125,K-Means,0
+Vietnam,2018,5.103,K-Means,0
+Indonesia,2018,5.093,K-Means,0
+Bhutan,2018,5.082,K-Means,1
+Somalia,2018,4.982,K-Means,2
+Cameroon,2018,4.975,K-Means,2
+Bulgaria,2018,4.933,K-Means,0
+Nepal,2018,4.88,K-Means,2
+Venezuela,2018,4.806,K-Means,0
+Gabon,2018,4.758,K-Means,0
+Palestinian Territories,2018,4.743,K-Means,0
+South Africa,2018,4.724,K-Means,0
+Iran,2018,4.707,K-Means,0
+Ivory Coast,2018,4.671,K-Means,2
+Ghana,2018,4.657,K-Means,2
+Senegal,2018,4.631,K-Means,2
+Laos,2018,4.623,K-Means,2
+Tunisia,2018,4.592,K-Means,0
+Albania,2018,4.586,K-Means,0
+Sierra Leone,2018,4.571,K-Means,2
+Congo (Brazzaville),2018,4.559,K-Means,2
+Bangladesh,2018,4.5,K-Means,2
+Sri Lanka,2018,4.471,K-Means,0
+Iraq,2018,4.456,K-Means,0
+Mali,2018,4.447,K-Means,2
+Namibia,2018,4.441,K-Means,0
+Cambodia,2018,4.433,K-Means,2
+Burkina Faso,2018,4.424,K-Means,2
+Egypt,2018,4.419,K-Means,0
+Mozambique,2018,4.417,K-Means,2
+Kenya,2018,4.41,K-Means,2
+Zambia,2018,4.377,K-Means,2
+Mauritania,2018,4.356,K-Means,2
+Ethiopia,2018,4.35,K-Means,2
+Georgia,2018,4.34,K-Means,2
+Armenia,2018,4.321,K-Means,0
+Myanmar,2018,4.308,K-Means,1
+Chad,2018,4.301,K-Means,2
+Congo (Kinshasa),2018,4.245,K-Means,2
+India,2018,4.19,K-Means,2
+Niger,2018,4.166,K-Means,2
+Uganda,2018,4.161,K-Means,2
+Benin,2018,4.141,K-Means,2
+Sudan,2018,4.139,K-Means,2
+Ukraine,2018,4.103,K-Means,0
+Togo,2018,3.999,K-Means,2
+Guinea,2018,3.964,K-Means,2
+Lesotho,2018,3.808,K-Means,2
+Angola,2018,3.795,K-Means,2
+Madagascar,2018,3.774,K-Means,2
+Zimbabwe,2018,3.692,K-Means,2
+Afghanistan,2018,3.632,K-Means,2
+Botswana,2018,3.59,K-Means,0
+Malawi,2018,3.587,K-Means,2
+Haiti,2018,3.582,K-Means,2
+Liberia,2018,3.495,K-Means,2
+Syria,2018,3.462,K-Means,2
+Rwanda,2018,3.408,K-Means,2
+Yemen,2018,3.355,K-Means,2
+Tanzania,2018,3.303,K-Means,2
+South Sudan,2018,3.254,K-Means,2
+Central African Republic,2018,3.083,K-Means,2
+Burundi,2018,2.905,K-Means,2

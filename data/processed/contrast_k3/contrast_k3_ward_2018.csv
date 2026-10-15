@@ -1,0 +1,156 @@
+country,year,happiness_score,algorithm,cluster_k3
+Finland,2018,7.632,Ward,0
+Norway,2018,7.594,Ward,0
+Denmark,2018,7.555,Ward,0
+Iceland,2018,7.495,Ward,1
+Switzerland,2018,7.487,Ward,0
+Netherlands,2018,7.441,Ward,0
+Canada,2018,7.328,Ward,0
+New Zealand,2018,7.324,Ward,0
+Sweden,2018,7.314,Ward,0
+Australia,2018,7.272,Ward,0
+United Kingdom,2018,7.19,Ward,1
+Austria,2018,7.139,Ward,0
+Costa Rica,2018,7.072,Ward,1
+Ireland,2018,6.977,Ward,0
+Germany,2018,6.965,Ward,0
+Belgium,2018,6.927,Ward,0
+Luxembourg,2018,6.91,Ward,0
+United States,2018,6.886,Ward,1
+Israel,2018,6.814,Ward,0
+Czech Republic,2018,6.711,Ward,1
+Malta,2018,6.627,Ward,1
+France,2018,6.489,Ward,1
+Mexico,2018,6.488,Ward,1
+Chile,2018,6.476,Ward,1
+Taiwan,2018,6.441,Ward,1
+Panama,2018,6.43,Ward,1
+Brazil,2018,6.419,Ward,1
+Argentina,2018,6.388,Ward,1
+Guatemala,2018,6.382,Ward,1
+Uruguay,2018,6.379,Ward,1
+Qatar,2018,6.374,Ward,1
+Saudi Arabia,2018,6.371,Ward,1
+Singapore,2018,6.343,Ward,0
+Malaysia,2018,6.322,Ward,1
+Spain,2018,6.31,Ward,1
+Colombia,2018,6.26,Ward,1
+Trinidad and Tobago,2018,6.192,Ward,1
+Slovakia,2018,6.173,Ward,1
+El Salvador,2018,6.167,Ward,1
+Nicaragua,2018,6.141,Ward,1
+Poland,2018,6.123,Ward,1
+Bahrain,2018,6.105,Ward,1
+Uzbekistan,2018,6.096,Ward,1
+Kuwait,2018,6.083,Ward,1
+Thailand,2018,6.072,Ward,1
+Italy,2018,6.0,Ward,1
+Ecuador,2018,5.973,Ward,1
+Belize,2018,5.956,Ward,1
+Lithuania,2018,5.952,Ward,1
+Slovenia,2018,5.948,Ward,1
+Romania,2018,5.945,Ward,1
+Latvia,2018,5.933,Ward,1
+Japan,2018,5.915,Ward,1
+Mauritius,2018,5.891,Ward,1
+Jamaica,2018,5.89,Ward,1
+South Korea,2018,5.875,Ward,1
+North Cyprus,2018,5.835,Ward,1
+Russia,2018,5.81,Ward,1
+Kazakhstan,2018,5.79,Ward,1
+Cyprus,2018,5.762,Ward,1
+Bolivia,2018,5.752,Ward,1
+Estonia,2018,5.739,Ward,1
+Paraguay,2018,5.681,Ward,1
+Peru,2018,5.663,Ward,1
+Kosovo,2018,5.662,Ward,1
+Moldova,2018,5.64,Ward,2
+Turkmenistan,2018,5.636,Ward,1
+Hungary,2018,5.62,Ward,1
+Libya,2018,5.566,Ward,1
+Philippines,2018,5.524,Ward,1
+Honduras,2018,5.504,Ward,1
+Belarus,2018,5.483,Ward,1
+Turkey,2018,5.483,Ward,1
+Pakistan,2018,5.472,Ward,2
+Hong Kong,2018,5.43,Ward,0
+Portugal,2018,5.41,Ward,1
+Serbia,2018,5.398,Ward,1
+Greece,2018,5.358,Ward,1
+Lebanon,2018,5.358,Ward,1
+Montenegro,2018,5.347,Ward,1
+Croatia,2018,5.321,Ward,1
+Dominican Republic,2018,5.302,Ward,1
+Algeria,2018,5.295,Ward,1
+Morocco,2018,5.254,Ward,2
+China,2018,5.246,Ward,1
+Azerbaijan,2018,5.201,Ward,1
+Tajikistan,2018,5.199,Ward,2
+North Macedonia,2018,5.185,Ward,1
+Jordan,2018,5.161,Ward,1
+Nigeria,2018,5.155,Ward,2
+Kyrgyzstan,2018,5.131,Ward,1
+Bosnia and Herzegovina,2018,5.129,Ward,2
+Mongolia,2018,5.125,Ward,1
+Vietnam,2018,5.103,Ward,1
+Indonesia,2018,5.093,Ward,1
+Bhutan,2018,5.082,Ward,1
+Somalia,2018,4.982,Ward,2
+Cameroon,2018,4.975,Ward,2
+Bulgaria,2018,4.933,Ward,1
+Nepal,2018,4.88,Ward,1
+Venezuela,2018,4.806,Ward,1
+Gabon,2018,4.758,Ward,1
+Palestinian Territories,2018,4.743,Ward,2
+South Africa,2018,4.724,Ward,1
+Iran,2018,4.707,Ward,2
+Ivory Coast,2018,4.671,Ward,2
+Ghana,2018,4.657,Ward,2
+Senegal,2018,4.631,Ward,2
+Laos,2018,4.623,Ward,1
+Tunisia,2018,4.592,Ward,2
+Albania,2018,4.586,Ward,2
+Sierra Leone,2018,4.571,Ward,2
+Congo (Brazzaville),2018,4.559,Ward,2
+Bangladesh,2018,4.5,Ward,2
+Sri Lanka,2018,4.471,Ward,1
+Iraq,2018,4.456,Ward,2
+Mali,2018,4.447,Ward,2
+Namibia,2018,4.441,Ward,1
+Cambodia,2018,4.433,Ward,1
+Burkina Faso,2018,4.424,Ward,2
+Egypt,2018,4.419,Ward,2
+Mozambique,2018,4.417,Ward,2
+Kenya,2018,4.41,Ward,1
+Zambia,2018,4.377,Ward,2
+Mauritania,2018,4.356,Ward,2
+Ethiopia,2018,4.35,Ward,2
+Georgia,2018,4.34,Ward,2
+Armenia,2018,4.321,Ward,2
+Myanmar,2018,4.308,Ward,1
+Chad,2018,4.301,Ward,2
+Congo (Kinshasa),2018,4.245,Ward,2
+India,2018,4.19,Ward,2
+Niger,2018,4.166,Ward,2
+Uganda,2018,4.161,Ward,2
+Benin,2018,4.141,Ward,2
+Sudan,2018,4.139,Ward,2
+Ukraine,2018,4.103,Ward,2
+Togo,2018,3.999,Ward,2
+Guinea,2018,3.964,Ward,2
+Lesotho,2018,3.808,Ward,2
+Angola,2018,3.795,Ward,2
+Madagascar,2018,3.774,Ward,2
+Zimbabwe,2018,3.692,Ward,2
+Afghanistan,2018,3.632,Ward,2
+Botswana,2018,3.59,Ward,1
+Malawi,2018,3.587,Ward,2
+Haiti,2018,3.582,Ward,2
+Liberia,2018,3.495,Ward,2
+Syria,2018,3.462,Ward,2
+Rwanda,2018,3.408,Ward,2
+Yemen,2018,3.355,Ward,2
+Tanzania,2018,3.303,Ward,2
+South Sudan,2018,3.254,Ward,2
+Central African Republic,2018,3.083,Ward,2
+Burundi,2018,2.905,Ward,2

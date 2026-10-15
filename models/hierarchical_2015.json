@@ -1,0 +1,1319 @@
+{
+  "model": {
+    "class": "SimpleHierarchicalClustering",
+    "parameters": {
+      "k": 3
+    },
+    "centroids": null,
+    "cluster_centroids": [
+      [
+        1.3159199301789954,
+        0.9667272667270318,
+        1.0887128520101492,
+        1.3030780308711043,
+        1.1105259926386275,
+        1.756646991903942
+      ],
+      [
+        0.22408536219171565,
+        0.26989161312991694,
+        0.35264542396946624,
+        -0.0043132495461210936,
+        -0.1656067173976349,
+        -0.2713864273619656
+      ],
+      [
+        -1.0768732420363831,
+        -1.0160081129262015,
+        -1.2482483384848404,
+        -0.5830935263656145,
+        -0.15098837312261362,
+        -0.2186958105921369
+      ]
+    ],
+    "labels": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      2,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      1,
+      2,
+      1,
+      2,
+      2,
+      1,
+      2,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      2,
+      1,
+      2,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      2
+    ],
+    "inertia": null,
+    "inertia_history": null,
+    "n_iter": null,
+    "merge_history": [
+      {
+        "left": 4,
+        "right": 6,
+        "distance": 0.2640783029928981,
+        "size": 2,
+        "merged_id": 158
+      },
+      {
+        "left": 41,
+        "right": 81,
+        "distance": 0.4239470645728225,
+        "size": 2,
+        "merged_id": 159
+      },
+      {
+        "left": 44,
+        "right": 103,
+        "distance": 0.4475265990202223,
+        "size": 2,
+        "merged_id": 160
+      },
+      {
+        "left": 17,
+        "right": 158,
+        "distance": 0.4680540645176622,
+        "size": 3,
+        "merged_id": 161
+      },
+      {
+        "left": 12,
+        "right": 25,
+        "distance": 0.47298394797976556,
+        "size": 2,
+        "merged_id": 162
+      },
+      {
+        "left": 28,
+        "right": 45,
+        "distance": 0.4760839717506685,
+        "size": 2,
+        "merged_id": 163
+      },
+      {
+        "left": 2,
+        "right": 7,
+        "distance": 0.516316074135169,
+        "size": 2,
+        "merged_id": 164
+      },
+      {
+        "left": 30,
+        "right": 87,
+        "distance": 0.5186251099177579,
+        "size": 2,
+        "merged_id": 165
+      },
+      {
+        "left": 75,
+        "right": 82,
+        "distance": 0.520618974432824,
+        "size": 2,
+        "merged_id": 166
+      },
+      {
+        "left": 42,
+        "right": 89,
+        "distance": 0.5228848322254561,
+        "size": 2,
+        "merged_id": 167
+      },
+      {
+        "left": 70,
+        "right": 131,
+        "distance": 0.5501568853489822,
+        "size": 2,
+        "merged_id": 168
+      },
+      {
+        "left": 22,
+        "right": 72,
+        "distance": 0.5611515716709915,
+        "size": 2,
+        "merged_id": 169
+      },
+      {
+        "left": 32,
+        "right": 64,
+        "distance": 0.5717195002465706,
+        "size": 2,
+        "merged_id": 170
+      },
+      {
+        "left": 13,
+        "right": 47,
+        "distance": 0.6093452349756194,
+        "size": 2,
+        "merged_id": 171
+      },
+      {
+        "left": 9,
+        "right": 161,
+        "distance": 0.6138849275592504,
+        "size": 4,
+        "merged_id": 172
+      },
+      {
+        "left": 29,
+        "right": 169,
+        "distance": 0.6378799693451795,
+        "size": 3,
+        "merged_id": 173
+      },
+      {
+        "left": 0,
+        "right": 5,
+        "distance": 0.638084494999783,
+        "size": 2,
+        "merged_id": 174
+      },
+      {
+        "left": 84,
+        "right": 132,
+        "distance": 0.6440521356303366,
+        "size": 2,
+        "merged_id": 175
+      },
+      {
+        "left": 126,
+        "right": 134,
+        "distance": 0.6678128016802408,
+        "size": 2,
+        "merged_id": 176
+      },
+      {
+        "left": 16,
+        "right": 19,
+        "distance": 0.6952476036544496,
+        "size": 2,
+        "merged_id": 177
+      },
+      {
+        "left": 10,
+        "right": 26,
+        "distance": 0.7012409088357241,
+        "size": 2,
+        "merged_id": 178
+      },
+      {
+        "left": 124,
+        "right": 145,
+        "distance": 0.7111112598403952,
+        "size": 2,
+        "merged_id": 179
+      },
+      {
+        "left": 85,
+        "right": 94,
+        "distance": 0.7256094537944564,
+        "size": 2,
+        "merged_id": 180
+      },
+      {
+        "left": 20,
+        "right": 172,
+        "distance": 0.7291109926032683,
+        "size": 5,
+        "merged_id": 181
+      },
+      {
+        "left": 88,
+        "right": 92,
+        "distance": 0.7296177396631924,
+        "size": 2,
+        "merged_id": 182
+      },
+      {
+        "left": 123,
+        "right": 139,
+        "distance": 0.7345594593665649,
+        "size": 2,
+        "merged_id": 183
+      },
+      {
+        "left": 11,
+        "right": 24,
+        "distance": 0.742431173673317,
+        "size": 2,
+        "merged_id": 184
+      },
+      {
+        "left": 50,
+        "right": 167,
+        "distance": 0.7469885569733796,
+        "size": 3,
+        "merged_id": 185
+      },
+      {
+        "left": 135,
+        "right": 138,
+        "distance": 0.7547163714089454,
+        "size": 2,
+        "merged_id": 186
+      },
+      {
+        "left": 133,
+        "right": 160,
+        "distance": 0.7618299072841249,
+        "size": 3,
+        "merged_id": 187
+      },
+      {
+        "left": 137,
+        "right": 151,
+        "distance": 0.7646694639829427,
+        "size": 2,
+        "merged_id": 188
+      },
+      {
+        "left": 51,
+        "right": 104,
+        "distance": 0.777096537528693,
+        "size": 2,
+        "merged_id": 189
+      },
+      {
+        "left": 18,
+        "right": 31,
+        "distance": 0.790742203598618,
+        "size": 2,
+        "merged_id": 190
+      },
+      {
+        "left": 130,
+        "right": 149,
+        "distance": 0.7964410225977165,
+        "size": 2,
+        "merged_id": 191
+      },
+      {
+        "left": 67,
+        "right": 79,
+        "distance": 0.8041286619474911,
+        "size": 2,
+        "merged_id": 192
+      },
+      {
+        "left": 102,
+        "right": 180,
+        "distance": 0.8126740692356597,
+        "size": 3,
+        "merged_id": 193
+      },
+      {
+        "left": 15,
+        "right": 58,
+        "distance": 0.8266894143962126,
+        "size": 2,
+        "merged_id": 194
+      },
+      {
+        "left": 59,
+        "right": 165,
+        "distance": 0.8336310443860889,
+        "size": 3,
+        "merged_id": 195
+      },
+      {
+        "left": 1,
+        "right": 36,
+        "distance": 0.8345015008583445,
+        "size": 2,
+        "merged_id": 196
+      },
+      {
+        "left": 54,
+        "right": 184,
+        "distance": 0.8552659340212798,
+        "size": 3,
+        "merged_id": 197
+      },
+      {
+        "left": 37,
+        "right": 65,
+        "distance": 0.8555199531272745,
+        "size": 2,
+        "merged_id": 198
+      },
+      {
+        "left": 57,
+        "right": 159,
+        "distance": 0.8738743233385775,
+        "size": 3,
+        "merged_id": 199
+      },
+      {
+        "left": 52,
+        "right": 99,
+        "distance": 0.8811655155714094,
+        "size": 2,
+        "merged_id": 200
+      },
+      {
+        "left": 53,
+        "right": 62,
+        "distance": 0.900103981448856,
+        "size": 2,
+        "merged_id": 201
+      },
+      {
+        "left": 60,
+        "right": 168,
+        "distance": 0.9038727005227674,
+        "size": 3,
+        "merged_id": 202
+      },
+      {
+        "left": 39,
+        "right": 97,
+        "distance": 0.9067312730638151,
+        "size": 2,
+        "merged_id": 203
+      },
+      {
+        "left": 108,
+        "right": 116,
+        "distance": 0.9104992232742726,
+        "size": 2,
+        "merged_id": 204
+      },
+      {
+        "left": 96,
+        "right": 122,
+        "distance": 0.9118087098513565,
+        "size": 2,
+        "merged_id": 205
+      },
+      {
+        "left": 114,
+        "right": 141,
+        "distance": 0.9288516845646984,
+        "size": 2,
+        "merged_id": 206
+      },
+      {
+        "left": 86,
+        "right": 110,
+        "distance": 0.9482947590750395,
+        "size": 2,
+        "merged_id": 207
+      },
+      {
+        "left": 61,
+        "right": 106,
+        "distance": 0.9523584733084146,
+        "size": 2,
+        "merged_id": 208
+      },
+      {
+        "left": 3,
+        "right": 174,
+        "distance": 0.9771828293912639,
+        "size": 3,
+        "merged_id": 209
+      },
+      {
+        "left": 38,
+        "right": 48,
+        "distance": 0.9986156788053319,
+        "size": 2,
+        "merged_id": 210
+      },
+      {
+        "left": 93,
+        "right": 205,
+        "distance": 1.0145632758566892,
+        "size": 3,
+        "merged_id": 211
+      },
+      {
+        "left": 115,
+        "right": 146,
+        "distance": 1.022371378391082,
+        "size": 2,
+        "merged_id": 212
+      },
+      {
+        "left": 121,
+        "right": 143,
+        "distance": 1.0252769335754732,
+        "size": 2,
+        "merged_id": 213
+      },
+      {
+        "left": 77,
+        "right": 100,
+        "distance": 1.0463160777589042,
+        "size": 2,
+        "merged_id": 214
+      },
+      {
+        "left": 21,
+        "right": 177,
+        "distance": 1.0474783877521878,
+        "size": 3,
+        "merged_id": 215
+      },
+      {
+        "left": 120,
+        "right": 179,
+        "distance": 1.048915746106832,
+        "size": 3,
+        "merged_id": 216
+      },
+      {
+        "left": 178,
+        "right": 198,
+        "distance": 1.0512586762056013,
+        "size": 4,
+        "merged_id": 217
+      },
+      {
+        "left": 35,
+        "right": 195,
+        "distance": 1.0561320460025347,
+        "size": 4,
+        "merged_id": 218
+      },
+      {
+        "left": 55,
+        "right": 63,
+        "distance": 1.0849785156996439,
+        "size": 2,
+        "merged_id": 219
+      },
+      {
+        "left": 173,
+        "right": 194,
+        "distance": 1.0916340866301093,
+        "size": 5,
+        "merged_id": 220
+      },
+      {
+        "left": 164,
+        "right": 209,
+        "distance": 1.1048747906725072,
+        "size": 5,
+        "merged_id": 221
+      },
+      {
+        "left": 14,
+        "right": 196,
+        "distance": 1.1131299584031245,
+        "size": 3,
+        "merged_id": 222
+      },
+      {
+        "left": 46,
+        "right": 66,
+        "distance": 1.129669417181491,
+        "size": 2,
+        "merged_id": 223
+      },
+      {
+        "left": 176,
+        "right": 208,
+        "distance": 1.1596505366727428,
+        "size": 4,
+        "merged_id": 224
+      },
+      {
+        "left": 150,
+        "right": 175,
+        "distance": 1.1622287393481279,
+        "size": 3,
+        "merged_id": 225
+      },
+      {
+        "left": 182,
+        "right": 207,
+        "distance": 1.164828602087049,
+        "size": 4,
+        "merged_id": 226
+      },
+      {
+        "left": 162,
+        "right": 190,
+        "distance": 1.1742366484379883,
+        "size": 4,
+        "merged_id": 227
+      },
+      {
+        "left": 33,
+        "right": 73,
+        "distance": 1.1757853639820368,
+        "size": 2,
+        "merged_id": 228
+      },
+      {
+        "left": 154,
+        "right": 157,
+        "distance": 1.1761767094573814,
+        "size": 2,
+        "merged_id": 229
+      },
+      {
+        "left": 142,
+        "right": 192,
+        "distance": 1.1782630052341332,
+        "size": 3,
+        "merged_id": 230
+      },
+      {
+        "left": 8,
+        "right": 181,
+        "distance": 1.1839211880686407,
+        "size": 6,
+        "merged_id": 231
+      },
+      {
+        "left": 74,
+        "right": 185,
+        "distance": 1.1992275544803506,
+        "size": 4,
+        "merged_id": 232
+      },
+      {
+        "left": 76,
+        "right": 189,
+        "distance": 1.205637342516165,
+        "size": 3,
+        "merged_id": 233
+      },
+      {
+        "left": 188,
+        "right": 206,
+        "distance": 1.2420664274617994,
+        "size": 4,
+        "merged_id": 234
+      },
+      {
+        "left": 23,
+        "right": 27,
+        "distance": 1.2568877318741454,
+        "size": 2,
+        "merged_id": 235
+      },
+      {
+        "left": 113,
+        "right": 186,
+        "distance": 1.309248301622274,
+        "size": 3,
+        "merged_id": 236
+      },
+      {
+        "left": 203,
+        "right": 232,
+        "distance": 1.3128262506019641,
+        "size": 6,
+        "merged_id": 237
+      },
+      {
+        "left": 107,
+        "right": 166,
+        "distance": 1.3263628518748034,
+        "size": 3,
+        "merged_id": 238
+      },
+      {
+        "left": 201,
+        "right": 220,
+        "distance": 1.3334996770830065,
+        "size": 7,
+        "merged_id": 239
+      },
+      {
+        "left": 119,
+        "right": 148,
+        "distance": 1.3626757734045056,
+        "size": 2,
+        "merged_id": 240
+      },
+      {
+        "left": 68,
+        "right": 95,
+        "distance": 1.3658397804426616,
+        "size": 2,
+        "merged_id": 241
+      },
+      {
+        "left": 140,
+        "right": 216,
+        "distance": 1.366468334622787,
+        "size": 4,
+        "merged_id": 242
+      },
+      {
+        "left": 49,
+        "right": 187,
+        "distance": 1.4065129350578611,
+        "size": 4,
+        "merged_id": 243
+      },
+      {
+        "left": 80,
+        "right": 152,
+        "distance": 1.4127746508800019,
+        "size": 2,
+        "merged_id": 244
+      },
+      {
+        "left": 105,
+        "right": 213,
+        "distance": 1.4200998773618916,
+        "size": 3,
+        "merged_id": 245
+      },
+      {
+        "left": 117,
+        "right": 136,
+        "distance": 1.4212057181779745,
+        "size": 2,
+        "merged_id": 246
+      },
+      {
+        "left": 83,
+        "right": 199,
+        "distance": 1.4269860856305085,
+        "size": 4,
+        "merged_id": 247
+      },
+      {
+        "left": 40,
+        "right": 202,
+        "distance": 1.4704475825215788,
+        "size": 4,
+        "merged_id": 248
+      },
+      {
+        "left": 91,
+        "right": 236,
+        "distance": 1.486849898762476,
+        "size": 4,
+        "merged_id": 249
+      },
+      {
+        "left": 112,
+        "right": 127,
+        "distance": 1.5051404092156082,
+        "size": 2,
+        "merged_id": 250
+      },
+      {
+        "left": 56,
+        "right": 237,
+        "distance": 1.527244149154032,
+        "size": 7,
+        "merged_id": 251
+      },
+      {
+        "left": 98,
+        "right": 144,
+        "distance": 1.6034749773533046,
+        "size": 2,
+        "merged_id": 252
+      },
+      {
+        "left": 43,
+        "right": 69,
+        "distance": 1.6049392248697578,
+        "size": 2,
+        "merged_id": 253
+      },
+      {
+        "left": 78,
+        "right": 228,
+        "distance": 1.6396785978653765,
+        "size": 3,
+        "merged_id": 254
+      },
+      {
+        "left": 71,
+        "right": 231,
+        "distance": 1.6460507375107905,
+        "size": 7,
+        "merged_id": 255
+      },
+      {
+        "left": 34,
+        "right": 210,
+        "distance": 1.6508620527745745,
+        "size": 3,
+        "merged_id": 256
+      },
+      {
+        "left": 217,
+        "right": 223,
+        "distance": 1.6521744224028434,
+        "size": 6,
+        "merged_id": 257
+      },
+      {
+        "left": 226,
+        "right": 243,
+        "distance": 1.6693962087986047,
+        "size": 8,
+        "merged_id": 258
+      },
+      {
+        "left": 183,
+        "right": 212,
+        "distance": 1.6884714318181673,
+        "size": 4,
+        "merged_id": 259
+      },
+      {
+        "left": 170,
+        "right": 197,
+        "distance": 1.7104582627039482,
+        "size": 5,
+        "merged_id": 260
+      },
+      {
+        "left": 125,
+        "right": 245,
+        "distance": 1.7209295079015097,
+        "size": 4,
+        "merged_id": 261
+      },
+      {
+        "left": 171,
+        "right": 247,
+        "distance": 1.7223665686051668,
+        "size": 6,
+        "merged_id": 262
+      },
+      {
+        "left": 211,
+        "right": 240,
+        "distance": 1.7618961777819144,
+        "size": 5,
+        "merged_id": 263
+      },
+      {
+        "left": 147,
+        "right": 229,
+        "distance": 1.7731750594852203,
+        "size": 3,
+        "merged_id": 264
+      },
+      {
+        "left": 109,
+        "right": 155,
+        "distance": 1.8530815126002176,
+        "size": 2,
+        "merged_id": 265
+      },
+      {
+        "left": 230,
+        "right": 238,
+        "distance": 1.8793548198511547,
+        "size": 6,
+        "merged_id": 266
+      },
+      {
+        "left": 200,
+        "right": 248,
+        "distance": 1.942846743414908,
+        "size": 6,
+        "merged_id": 267
+      },
+      {
+        "left": 111,
+        "right": 241,
+        "distance": 2.013630019123973,
+        "size": 3,
+        "merged_id": 268
+      },
+      {
+        "left": 225,
+        "right": 234,
+        "distance": 2.0536530247133475,
+        "size": 7,
+        "merged_id": 269
+      },
+      {
+        "left": 215,
+        "right": 221,
+        "distance": 2.074846584341736,
+        "size": 8,
+        "merged_id": 270
+      },
+      {
+        "left": 101,
+        "right": 224,
+        "distance": 2.104431091035731,
+        "size": 5,
+        "merged_id": 271
+      },
+      {
+        "left": 218,
+        "right": 260,
+        "distance": 2.1347389433728208,
+        "size": 9,
+        "merged_id": 272
+      },
+      {
+        "left": 156,
+        "right": 244,
+        "distance": 2.146490854780776,
+        "size": 3,
+        "merged_id": 273
+      },
+      {
+        "left": 191,
+        "right": 264,
+        "distance": 2.1656761357952914,
+        "size": 5,
+        "merged_id": 274
+      },
+      {
+        "left": 214,
+        "right": 250,
+        "distance": 2.1743052841798787,
+        "size": 4,
+        "merged_id": 275
+      },
+      {
+        "left": 163,
+        "right": 227,
+        "distance": 2.283912225353515,
+        "size": 6,
+        "merged_id": 276
+      },
+      {
+        "left": 204,
+        "right": 249,
+        "distance": 2.3321649137878064,
+        "size": 6,
+        "merged_id": 277
+      },
+      {
+        "left": 239,
+        "right": 262,
+        "distance": 2.390170912087856,
+        "size": 13,
+        "merged_id": 278
+      },
+      {
+        "left": 235,
+        "right": 270,
+        "distance": 2.4406650770962504,
+        "size": 10,
+        "merged_id": 279
+      },
+      {
+        "left": 233,
+        "right": 242,
+        "distance": 2.46386880610414,
+        "size": 7,
+        "merged_id": 280
+      },
+      {
+        "left": 219,
+        "right": 258,
+        "distance": 2.488842420936903,
+        "size": 10,
+        "merged_id": 281
+      },
+      {
+        "left": 118,
+        "right": 265,
+        "distance": 2.503342833614385,
+        "size": 3,
+        "merged_id": 282
+      },
+      {
+        "left": 246,
+        "right": 259,
+        "distance": 2.610017484206267,
+        "size": 6,
+        "merged_id": 283
+      },
+      {
+        "left": 193,
+        "right": 271,
+        "distance": 2.635350691615797,
+        "size": 8,
+        "merged_id": 284
+      },
+      {
+        "left": 263,
+        "right": 269,
+        "distance": 2.673701153709555,
+        "size": 12,
+        "merged_id": 285
+      },
+      {
+        "left": 90,
+        "right": 153,
+        "distance": 2.7528809920170665,
+        "size": 2,
+        "merged_id": 286
+      },
+      {
+        "left": 254,
+        "right": 267,
+        "distance": 2.787290461486099,
+        "size": 9,
+        "merged_id": 287
+      },
+      {
+        "left": 261,
+        "right": 277,
+        "distance": 2.952599875974261,
+        "size": 10,
+        "merged_id": 288
+      },
+      {
+        "left": 253,
+        "right": 256,
+        "distance": 3.075864796918717,
+        "size": 5,
+        "merged_id": 289
+      },
+      {
+        "left": 266,
+        "right": 284,
+        "distance": 3.148032960943361,
+        "size": 14,
+        "merged_id": 290
+      },
+      {
+        "left": 268,
+        "right": 290,
+        "distance": 3.2987741664281955,
+        "size": 17,
+        "merged_id": 291
+      },
+      {
+        "left": 276,
+        "right": 289,
+        "distance": 3.3569897841596608,
+        "size": 11,
+        "merged_id": 292
+      },
+      {
+        "left": 273,
+        "right": 282,
+        "distance": 3.43672379180085,
+        "size": 6,
+        "merged_id": 293
+      },
+      {
+        "left": 222,
+        "right": 255,
+        "distance": 3.4558308117034007,
+        "size": 10,
+        "merged_id": 294
+      },
+      {
+        "left": 275,
+        "right": 285,
+        "distance": 3.5455097226109453,
+        "size": 16,
+        "merged_id": 295
+      },
+      {
+        "left": 257,
+        "right": 272,
+        "distance": 3.6779777981703887,
+        "size": 15,
+        "merged_id": 296
+      },
+      {
+        "left": 251,
+        "right": 252,
+        "distance": 3.7357435729990836,
+        "size": 9,
+        "merged_id": 297
+      },
+      {
+        "left": 129,
+        "right": 288,
+        "distance": 3.8605392055336947,
+        "size": 11,
+        "merged_id": 298
+      },
+      {
+        "left": 283,
+        "right": 295,
+        "distance": 4.280577818583758,
+        "size": 22,
+        "merged_id": 299
+      },
+      {
+        "left": 278,
+        "right": 296,
+        "distance": 4.495318638615894,
+        "size": 28,
+        "merged_id": 300
+      },
+      {
+        "left": 281,
+        "right": 291,
+        "distance": 4.569121732517176,
+        "size": 27,
+        "merged_id": 301
+      },
+      {
+        "left": 287,
+        "right": 297,
+        "distance": 4.894422168235722,
+        "size": 18,
+        "merged_id": 302
+      },
+      {
+        "left": 128,
+        "right": 286,
+        "distance": 4.9091524441650405,
+        "size": 3,
+        "merged_id": 303
+      },
+      {
+        "left": 274,
+        "right": 298,
+        "distance": 5.09242530364698,
+        "size": 16,
+        "merged_id": 304
+      },
+      {
+        "left": 280,
+        "right": 302,
+        "distance": 5.25088179676712,
+        "size": 25,
+        "merged_id": 305
+      },
+      {
+        "left": 279,
+        "right": 294,
+        "distance": 5.5884880959932195,
+        "size": 20,
+        "merged_id": 306
+      },
+      {
+        "left": 292,
+        "right": 300,
+        "distance": 5.974279385642744,
+        "size": 39,
+        "merged_id": 307
+      },
+      {
+        "left": 293,
+        "right": 304,
+        "distance": 6.217686440703694,
+        "size": 22,
+        "merged_id": 308
+      },
+      {
+        "left": 303,
+        "right": 305,
+        "distance": 7.575202551927386,
+        "size": 28,
+        "merged_id": 309
+      },
+      {
+        "left": 299,
+        "right": 308,
+        "distance": 8.704450819847956,
+        "size": 44,
+        "merged_id": 310
+      },
+      {
+        "left": 301,
+        "right": 307,
+        "distance": 10.865624046980349,
+        "size": 66,
+        "merged_id": 311
+      },
+      {
+        "left": 309,
+        "right": 311,
+        "distance": 13.052772266972951,
+        "size": 94,
+        "merged_id": 312
+      }
+    ],
+    "eps": null,
+    "min_samples": null
+  },
+  "scaler": {
+    "means": [
+      0.8461372151898726,
+      0.9910459493670887,
+      0.6302593670886079,
+      0.4286149367088611,
+      0.23729550632911403,
+      0.14342183544303794
+    ],
+    "stds": [
+      0.40184305494803113,
+      0.2715057903782327,
+      0.24629463353565006,
+      0.15021515109136316,
+      0.12628339597677596,
+      0.11965361596591954
+    ]
+  },
+  "metadata": {
+    "year": 2015,
+    "algorithm": "Ward",
+    "scaling": "standard",
+    "k": 3,
+    "features": [
+      "gdp_per_capita",
+      "social_support",
+      "healthy_life_expectancy",
+      "freedom",
+      "generosity",
+      "corruption_perception"
+    ]
+  }
+}

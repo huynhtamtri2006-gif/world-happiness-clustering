@@ -1,0 +1,157 @@
+country,year,happiness_score,algorithm,cluster_k3
+Finland,2019,7.769,Ward,0
+Denmark,2019,7.6,Ward,0
+Norway,2019,7.554,Ward,0
+Iceland,2019,7.494,Ward,1
+Netherlands,2019,7.488,Ward,0
+Switzerland,2019,7.48,Ward,0
+Sweden,2019,7.343,Ward,0
+New Zealand,2019,7.307,Ward,0
+Canada,2019,7.278,Ward,0
+Austria,2019,7.246,Ward,0
+Australia,2019,7.228,Ward,0
+Costa Rica,2019,7.167,Ward,1
+Israel,2019,7.139,Ward,1
+Luxembourg,2019,7.09,Ward,0
+United Kingdom,2019,7.054,Ward,0
+Ireland,2019,7.021,Ward,0
+Germany,2019,6.985,Ward,0
+Belgium,2019,6.923,Ward,1
+United States,2019,6.892,Ward,1
+Czech Republic,2019,6.852,Ward,1
+United Arab Emirates,2019,6.825,Ward,1
+Malta,2019,6.726,Ward,1
+Mexico,2019,6.595,Ward,1
+France,2019,6.592,Ward,1
+Taiwan,2019,6.446,Ward,1
+Chile,2019,6.444,Ward,1
+Guatemala,2019,6.436,Ward,1
+Saudi Arabia,2019,6.375,Ward,1
+Qatar,2019,6.374,Ward,1
+Spain,2019,6.354,Ward,1
+Panama,2019,6.321,Ward,1
+Brazil,2019,6.3,Ward,1
+Uruguay,2019,6.293,Ward,1
+Singapore,2019,6.262,Ward,0
+El Salvador,2019,6.253,Ward,1
+Italy,2019,6.223,Ward,1
+Bahrain,2019,6.199,Ward,1
+Slovakia,2019,6.198,Ward,1
+Trinidad and Tobago,2019,6.192,Ward,1
+Poland,2019,6.182,Ward,1
+Uzbekistan,2019,6.174,Ward,1
+Lithuania,2019,6.149,Ward,1
+Colombia,2019,6.125,Ward,1
+Slovenia,2019,6.118,Ward,1
+Nicaragua,2019,6.105,Ward,1
+Kosovo,2019,6.1,Ward,1
+Argentina,2019,6.086,Ward,1
+Romania,2019,6.07,Ward,1
+Cyprus,2019,6.046,Ward,1
+Ecuador,2019,6.028,Ward,1
+Kuwait,2019,6.021,Ward,1
+Thailand,2019,6.008,Ward,1
+Latvia,2019,5.94,Ward,1
+South Korea,2019,5.895,Ward,1
+Estonia,2019,5.893,Ward,1
+Jamaica,2019,5.89,Ward,1
+Mauritius,2019,5.888,Ward,1
+Japan,2019,5.886,Ward,1
+Honduras,2019,5.86,Ward,1
+Kazakhstan,2019,5.809,Ward,1
+Bolivia,2019,5.779,Ward,1
+Hungary,2019,5.758,Ward,1
+Paraguay,2019,5.743,Ward,1
+North Cyprus,2019,5.718,Ward,1
+Peru,2019,5.697,Ward,1
+Portugal,2019,5.693,Ward,1
+Pakistan,2019,5.653,Ward,2
+Russia,2019,5.648,Ward,1
+Philippines,2019,5.631,Ward,1
+Serbia,2019,5.603,Ward,1
+Moldova,2019,5.529,Ward,1
+Libya,2019,5.525,Ward,1
+Montenegro,2019,5.523,Ward,1
+Tajikistan,2019,5.467,Ward,1
+Croatia,2019,5.432,Ward,1
+Hong Kong,2019,5.43,Ward,0
+Dominican Republic,2019,5.425,Ward,1
+Bosnia and Herzegovina,2019,5.386,Ward,1
+Turkey,2019,5.373,Ward,1
+Malaysia,2019,5.339,Ward,1
+Belarus,2019,5.323,Ward,1
+Greece,2019,5.287,Ward,1
+Mongolia,2019,5.285,Ward,1
+North Macedonia,2019,5.274,Ward,1
+Nigeria,2019,5.265,Ward,2
+Kyrgyzstan,2019,5.261,Ward,1
+Turkmenistan,2019,5.247,Ward,1
+Algeria,2019,5.211,Ward,1
+Morocco,2019,5.208,Ward,1
+Azerbaijan,2019,5.208,Ward,1
+Lebanon,2019,5.197,Ward,1
+Indonesia,2019,5.192,Ward,1
+China,2019,5.191,Ward,1
+Vietnam,2019,5.175,Ward,1
+Bhutan,2019,5.082,Ward,1
+Cameroon,2019,5.044,Ward,2
+Bulgaria,2019,5.011,Ward,1
+Ghana,2019,4.996,Ward,2
+Ivory Coast,2019,4.944,Ward,2
+Nepal,2019,4.913,Ward,1
+Jordan,2019,4.906,Ward,1
+Benin,2019,4.883,Ward,2
+Congo (Brazzaville),2019,4.812,Ward,2
+Gabon,2019,4.799,Ward,1
+Laos,2019,4.796,Ward,1
+South Africa,2019,4.722,Ward,1
+Albania,2019,4.719,Ward,1
+Venezuela,2019,4.707,Ward,1
+Cambodia,2019,4.7,Ward,1
+Palestinian Territories,2019,4.696,Ward,1
+Senegal,2019,4.681,Ward,1
+Somalia,2019,4.668,Ward,2
+Namibia,2019,4.639,Ward,1
+Niger,2019,4.628,Ward,2
+Burkina Faso,2019,4.587,Ward,2
+Armenia,2019,4.559,Ward,1
+Iran,2019,4.548,Ward,1
+Guinea,2019,4.534,Ward,2
+Georgia,2019,4.519,Ward,1
+Gambia,2019,4.516,Ward,2
+Kenya,2019,4.509,Ward,2
+Mauritania,2019,4.49,Ward,1
+Mozambique,2019,4.466,Ward,2
+Tunisia,2019,4.461,Ward,1
+Bangladesh,2019,4.456,Ward,1
+Iraq,2019,4.437,Ward,1
+Congo (Kinshasa),2019,4.418,Ward,2
+Mali,2019,4.39,Ward,2
+Sierra Leone,2019,4.374,Ward,2
+Sri Lanka,2019,4.366,Ward,1
+Myanmar,2019,4.36,Ward,1
+Chad,2019,4.35,Ward,2
+Ukraine,2019,4.332,Ward,1
+Ethiopia,2019,4.286,Ward,2
+Eswatini,2019,4.212,Ward,1
+Uganda,2019,4.189,Ward,2
+Egypt,2019,4.166,Ward,1
+Zambia,2019,4.107,Ward,2
+Togo,2019,4.085,Ward,2
+India,2019,4.015,Ward,1
+Liberia,2019,3.975,Ward,2
+Comoros,2019,3.973,Ward,2
+Madagascar,2019,3.933,Ward,2
+Lesotho,2019,3.802,Ward,1
+Burundi,2019,3.775,Ward,2
+Zimbabwe,2019,3.663,Ward,2
+Haiti,2019,3.597,Ward,2
+Botswana,2019,3.488,Ward,1
+Syria,2019,3.462,Ward,2
+Malawi,2019,3.41,Ward,2
+Yemen,2019,3.38,Ward,1
+Rwanda,2019,3.334,Ward,2
+Tanzania,2019,3.231,Ward,2
+Afghanistan,2019,3.203,Ward,2
+Central African Republic,2019,3.083,Ward,2
+South Sudan,2019,2.853,Ward,2

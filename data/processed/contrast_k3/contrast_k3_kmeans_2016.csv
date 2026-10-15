@@ -1,0 +1,158 @@
+country,year,happiness_score,algorithm,cluster_k3
+Denmark,2016,7.526,K-Means,0
+Switzerland,2016,7.509,K-Means,0
+Iceland,2016,7.501,K-Means,0
+Norway,2016,7.498,K-Means,0
+Finland,2016,7.413,K-Means,0
+Canada,2016,7.404,K-Means,0
+Netherlands,2016,7.339,K-Means,0
+New Zealand,2016,7.334,K-Means,0
+Australia,2016,7.313,K-Means,0
+Sweden,2016,7.291,K-Means,0
+Israel,2016,7.267,K-Means,1
+Austria,2016,7.119,K-Means,0
+United States,2016,7.104,K-Means,0
+Costa Rica,2016,7.087,K-Means,1
+Puerto Rico,2016,7.039,K-Means,1
+Germany,2016,6.994,K-Means,0
+Brazil,2016,6.952,K-Means,1
+Belgium,2016,6.929,K-Means,0
+Ireland,2016,6.907,K-Means,0
+Luxembourg,2016,6.871,K-Means,0
+Mexico,2016,6.778,K-Means,1
+Singapore,2016,6.739,K-Means,0
+United Kingdom,2016,6.725,K-Means,0
+Chile,2016,6.705,K-Means,1
+Panama,2016,6.701,K-Means,1
+Argentina,2016,6.65,K-Means,1
+Czech Republic,2016,6.596,K-Means,1
+United Arab Emirates,2016,6.573,K-Means,0
+Uruguay,2016,6.545,K-Means,0
+Malta,2016,6.488,K-Means,0
+Colombia,2016,6.481,K-Means,1
+France,2016,6.478,K-Means,1
+Thailand,2016,6.474,K-Means,0
+Saudi Arabia,2016,6.379,K-Means,1
+Taiwan,2016,6.379,K-Means,1
+Qatar,2016,6.375,K-Means,0
+Spain,2016,6.361,K-Means,1
+Algeria,2016,6.355,K-Means,1
+Guatemala,2016,6.324,K-Means,1
+Suriname,2016,6.269,K-Means,1
+Kuwait,2016,6.239,K-Means,1
+Bahrain,2016,6.218,K-Means,0
+Trinidad and Tobago,2016,6.168,K-Means,1
+Venezuela,2016,6.084,K-Means,1
+Slovakia,2016,6.078,K-Means,1
+El Salvador,2016,6.068,K-Means,1
+Malaysia,2016,6.005,K-Means,1
+Nicaragua,2016,5.992,K-Means,1
+Uzbekistan,2016,5.987,K-Means,0
+Italy,2016,5.977,K-Means,1
+Ecuador,2016,5.976,K-Means,1
+Belize,2016,5.956,K-Means,1
+Japan,2016,5.921,K-Means,1
+Kazakhstan,2016,5.919,K-Means,1
+Moldova,2016,5.897,K-Means,1
+Russia,2016,5.856,K-Means,1
+Poland,2016,5.835,K-Means,1
+South Korea,2016,5.835,K-Means,1
+Bolivia,2016,5.822,K-Means,1
+Lithuania,2016,5.813,K-Means,1
+Belarus,2016,5.802,K-Means,1
+North Cyprus,2016,5.771,K-Means,1
+Slovenia,2016,5.768,K-Means,1
+Peru,2016,5.743,K-Means,1
+Turkmenistan,2016,5.658,K-Means,1
+Mauritius,2016,5.648,K-Means,1
+Libya,2016,5.615,K-Means,1
+Latvia,2016,5.56,K-Means,1
+Cyprus,2016,5.546,K-Means,1
+Paraguay,2016,5.538,K-Means,1
+Romania,2016,5.528,K-Means,1
+Estonia,2016,5.517,K-Means,1
+Jamaica,2016,5.51,K-Means,1
+Croatia,2016,5.488,K-Means,1
+Hong Kong,2016,5.458,K-Means,0
+Somalia,2016,5.44,K-Means,2
+Kosovo,2016,5.401,K-Means,1
+Turkey,2016,5.389,K-Means,1
+Indonesia,2016,5.314,K-Means,1
+Jordan,2016,5.303,K-Means,1
+Azerbaijan,2016,5.291,K-Means,1
+Philippines,2016,5.279,K-Means,1
+China,2016,5.245,K-Means,1
+Bhutan,2016,5.196,K-Means,0
+Kyrgyzstan,2016,5.185,K-Means,1
+Serbia,2016,5.177,K-Means,1
+Bosnia and Herzegovina,2016,5.163,K-Means,1
+Montenegro,2016,5.161,K-Means,1
+Dominican Republic,2016,5.155,K-Means,1
+Morocco,2016,5.151,K-Means,1
+Hungary,2016,5.145,K-Means,1
+Pakistan,2016,5.132,K-Means,2
+Lebanon,2016,5.129,K-Means,1
+Portugal,2016,5.123,K-Means,1
+North Macedonia,2016,5.121,K-Means,1
+Vietnam,2016,5.061,K-Means,1
+Somaliland,2016,5.057,K-Means,2
+Tunisia,2016,5.045,K-Means,1
+Greece,2016,5.033,K-Means,1
+Tajikistan,2016,4.996,K-Means,2
+Mongolia,2016,4.907,K-Means,1
+Laos,2016,4.876,K-Means,2
+Nigeria,2016,4.875,K-Means,2
+Honduras,2016,4.871,K-Means,1
+Iran,2016,4.813,K-Means,1
+Zambia,2016,4.795,K-Means,2
+Nepal,2016,4.793,K-Means,2
+Palestinian Territories,2016,4.754,K-Means,1
+Albania,2016,4.655,K-Means,1
+Bangladesh,2016,4.643,K-Means,2
+Sierra Leone,2016,4.635,K-Means,2
+Iraq,2016,4.575,K-Means,1
+Namibia,2016,4.574,K-Means,1
+Cameroon,2016,4.513,K-Means,2
+Ethiopia,2016,4.508,K-Means,2
+South Africa,2016,4.459,K-Means,1
+Sri Lanka,2016,4.415,K-Means,1
+India,2016,4.404,K-Means,2
+Myanmar,2016,4.395,K-Means,2
+Egypt,2016,4.362,K-Means,1
+Armenia,2016,4.36,K-Means,1
+Kenya,2016,4.356,K-Means,2
+Ukraine,2016,4.324,K-Means,1
+Ghana,2016,4.276,K-Means,2
+Congo (Kinshasa),2016,4.272,K-Means,2
+Georgia,2016,4.252,K-Means,2
+Congo (Brazzaville),2016,4.236,K-Means,2
+Senegal,2016,4.219,K-Means,2
+Bulgaria,2016,4.217,K-Means,1
+Mauritania,2016,4.201,K-Means,2
+Zimbabwe,2016,4.193,K-Means,2
+Malawi,2016,4.156,K-Means,2
+Sudan,2016,4.139,K-Means,2
+Gabon,2016,4.121,K-Means,1
+Mali,2016,4.073,K-Means,2
+Haiti,2016,4.028,K-Means,2
+Botswana,2016,3.974,K-Means,1
+Comoros,2016,3.956,K-Means,2
+Ivory Coast,2016,3.916,K-Means,2
+Cambodia,2016,3.907,K-Means,2
+Angola,2016,3.866,K-Means,2
+Niger,2016,3.856,K-Means,2
+South Sudan,2016,3.832,K-Means,2
+Chad,2016,3.763,K-Means,2
+Burkina Faso,2016,3.739,K-Means,2
+Uganda,2016,3.739,K-Means,2
+Yemen,2016,3.724,K-Means,2
+Madagascar,2016,3.695,K-Means,2
+Tanzania,2016,3.666,K-Means,2
+Liberia,2016,3.622,K-Means,2
+Guinea,2016,3.607,K-Means,2
+Rwanda,2016,3.515,K-Means,2
+Benin,2016,3.484,K-Means,2
+Afghanistan,2016,3.36,K-Means,2
+Togo,2016,3.303,K-Means,2
+Syria,2016,3.069,K-Means,2
+Burundi,2016,2.905,K-Means,2
