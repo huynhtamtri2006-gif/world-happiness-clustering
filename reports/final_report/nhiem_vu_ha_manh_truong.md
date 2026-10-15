@@ -55,13 +55,13 @@ Phụ trách chính **Giai đoạn 1, 2, 4** và chủ trì việc ghép báo c�
 - [x] **Ngày 14:** Tham gia buổi Walkthrough module thuật toán do Trí trình bày.
 
 #### 🔹 Mốc M3: Thẩm định tính nhất quán số liệu thực nghiệm (Ngày 15 – Ngày 21)
-- [ ] **Ngày 15 (Họp nhóm):** Chốt định dạng bảng biểu và cách trình bày kết quả $k^*$ chính và $k=3$ đối chứng.
-- [ ] **Ngày 16:** Kiểm tra tính hợp lý của số cụm $k^*$ giữa các năm (trong khoảng 2 đến 5 cụm).
-- [ ] **Ngày 17:** Đối chiếu các con số trong notebook 03 với các file CSV xuất ra trong `reports/tables/`.
-- [ ] **Ngày 18:** Rà soát khóa chính và tên cột giữa các bảng số liệu để bảo đảm liên kết dữ liệu không bị lỗi.
-- [ ] **Ngày 19:** Kiểm tra bảng dịch chuyển cụm 156 quốc gia qua 5 năm do Trung lập (đảm bảo đủ 156 dòng, không trùng lặp do lệch tên).
-- [ ] **Ngày 20:** Kiểm tra toàn bộ 12 hình ảnh xuất ra bảo đảm đúng độ phân giải 300 DPI.
-- [ ] **Ngày 21:** Tham gia buổi Walkthrough module Diễn giải tri thức do Trung trình bày; rà soát chéo toàn bộ kết quả M3.
+- [x] **Ngày 15 (Họp nhóm):** Chốt định dạng bảng biểu và cách trình bày kết quả $k^*$ chính và $k=3$ đối chứng; nghiệm thu bảng `reports/tables/contrast_k3_by_year.csv` (10 dòng đầy đủ cho K-Means và Ward).
+- [x] **Ngày 16:** Kiểm tra tính hợp lý của số cụm $k^*$ giữa các năm (100% các năm $k^* \in [2, 5]$; đồng thuận $k^*=3$ toàn cục với Silhouette cực đại 0.293–0.344).
+- [x] **Ngày 17:** Đối chiếu các con số trong notebook 03 với các file CSV xuất ra trong `reports/tables/` (`k_sensitivity_by_year.csv` 40 dòng, `model_comparison_metrics_by_year.csv` 25 dòng, `dbscan_sweep.csv` 60 dòng, `stability_ari.csv` 25 dòng).
+- [x] **Ngày 18:** Rà soát khóa chính và tên cột giữa các bảng số liệu để bảo đảm liên kết dữ liệu không bị lỗi; xác nhận khớp 100% với 781 dòng interim.
+- [x] **Ngày 19:** Kiểm tra bảng dịch chuyển cụm 156 quốc gia qua 5 năm (`data/processed/country_cluster_shift.csv`), xác nhận đủ 156 dòng, 0 trùng lặp, UAE 2018 khuyết thiếu hợp lệ.
+- [x] **Ngày 20:** Kiểm tra toàn bộ 13 hình ảnh xuất ra bảo đảm đúng độ phân giải $\ge 300$ DPI phục vụ in ấn Báo cáo Word.
+- [x] **Ngày 21:** Tham gia buổi Walkthrough module Diễn giải tri thức do Trung trình bày; rà soát chéo toàn bộ kết quả M3; xây dựng script kiểm toán độc lập [`scripts/audit_m3_data_consistency.py`](../../scripts/audit_m3_data_consistency.py) và lưu log tại [`logs/audit_m3_consistency.log`](../../logs/audit_m3_consistency.log).
 
 #### 🔹 Mốc M4: Tự động hóa Báo cáo Word & Soạn thảo Mục 1–4 (Ngày 22 – Ngày 26)
 - [ ] **Ngày 22 (Họp nhóm):** Chốt tiến độ M3 và phạm vi báo cáo Word.
