@@ -1,0 +1,58 @@
+================================================================================
+BÁO CÁO THẨM ĐỊNH TÍNH NHẤT QUÁN SỐ LIỆU THỰC NGHIỆM MỐC M3 — NHÓM TRƯỞNG
+Người thẩm định: Hà Mạnh Trường (MSSV: 2045240326)
+Đề tài 16: Phân nhóm quốc gia theo các yếu tố hạnh phúc (World Happiness Report)
+Thời gian thực hiện: Mốc M3 (Ngày 15 – Ngày 21)
+================================================================================
+
+--- [NGÀY 15] THẨM ĐỊNH ĐỊNH DẠNG BẢNG BIỂU & CẤU HÌNH ĐỐI CHỨNG k=3 ---
+PASS: Bảng contrast_k3_by_year.csv đúng cấu trúc 10 dòng (2 thuật toán K-Means/Ward x 5 năm).
+  - Năm 2015: K-Means Sil=0.2931, Ward Sil=0.2541
+  - Năm 2016: K-Means Sil=0.3037, Ward Sil=0.2908
+  - Năm 2017: K-Means Sil=0.3133, Ward Sil=0.2861
+  - Năm 2018: K-Means Sil=0.3365, Ward Sil=0.2925
+  - Năm 2019: K-Means Sil=0.3436, Ward Sil=0.3104
+
+--- [NGÀY 16] KIỂM TRA TÍNH HỢP LÝ CỦA SỐ CỤM k* GIỮA CÁC NĂM ---
+Số cụm tối ưu k* theo từng năm: {2015: 3, 2016: 3, 2017: 3, 2018: 3, 2019: 3}
+PASS: 100% số cụm tối ưu k* nằm trong khoảng hợp lý [2, 5].
+PASS: Tất cả 5 năm đều đồng thuận k* = 3 là số cụm tối ưu toàn cục (Silhouette cực đại: 0.293 – 0.344).
+
+--- [NGÀY 17] ĐỐI CHIẾU SỐ LIỆU THỰC NGHIỆM VỚI CÁC TỆP CSV ---
+PASS: k_sensitivity_by_year.csv (40/40 dòng, 0 NaN ở các độ đo cốt lõi) — Khảo sát k in [2, 9] qua 5 năm
+PASS: model_comparison_metrics_by_year.csv (25/25 dòng, 0 NaN ở các độ đo cốt lõi) — So sánh 5 cấu hình x 5 năm
+PASS: dbscan_sweep.csv (60/60 dòng, 0 NaN ở các độ đo cốt lõi) — Quét siêu tham số DBSCAN 4 eps x 3 min_samples x 5 năm
+PASS: stability_ari.csv (25/25 dòng, 0 NaN ở các độ đo cốt lõi) — Độ ổn định ARI qua 10 seed ngẫu nhiên x 5 năm
+PASS: contrast_k3_by_year.csv (10/10 dòng, 0 NaN ở các độ đo cốt lõi) — Cấu hình đối chứng k=3 xuyên năm
+
+--- [NGÀY 18] RÀ SOÁT KHÓA CHÍNH VÀ LIÊN KẾT DỮ LIỆU ---
+Dữ liệu interim: 781 dòng, 164 quốc gia duy nhất.
+PASS: 100% danh sách quốc gia giữa bảng interim và kết quả gom cụm khớp nhau tuyệt đối.
+
+--- [NGÀY 19] THẨM ĐỊNH BẢNG DỊCH CHUYỂN CỤM 156 QUỐC GIA ---
+PASS: country_cluster_shift.csv có đúng 156 quốc gia, 0 trùng lặp tên.
+PASS: Bản ghi United Arab Emirates (UAE) năm 2018 hiển thị NaN hợp lệ (đã loại bỏ an toàn do khuyết chỉ số tham nhũng).
+Thống kê độ ổn định: {'Ổn định tuyệt đối': 142, 'Biến động trung gian': 8, 'Cải thiện nhóm (+)': 4, 'Suy giảm nhóm (-)': 2}
+
+--- [NGÀY 20] KIỂM TRA ĐỘ PHÂN GIẢI TOÀN BỘ HÌNH ẢNH (300 DPI) ---
+Tổng số hình ảnh tìm thấy trong reports/figures/: 13 hình.
+PASS: Đạt và vượt chỉ tiêu số lượng (>= 12 hình ảnh phục vụ Báo cáo Word).
+PASS: boxplots_outliers.png — DPI: 300 — Kích thước: (3600, 1800) px
+PASS: cluster_count_trend.png — DPI: 300 — Kích thước: (3000, 1800) px
+PASS: correlation_heatmap.png — DPI: 300 — Kích thước: (2400, 1800) px
+PASS: elbow_silhouette_kmeans.png — DPI: 300 — Kích thước: (4170, 1473) px
+PASS: feature_distributions.png — DPI: 300 — Kích thước: (4200, 2400) px
+PASS: k_sensitivity_2015.png — DPI: 300 — Kích thước: (2100, 1200) px
+PASS: k_sensitivity_2016.png — DPI: 300 — Kích thước: (2100, 1200) px
+PASS: k_sensitivity_2017.png — DPI: 300 — Kích thước: (2100, 1200) px
+PASS: k_sensitivity_2018.png — DPI: 300 — Kích thước: (2100, 1200) px
+PASS: k_sensitivity_2019.png — DPI: 300 — Kích thước: (2100, 1200) px
+PASS: pca_clusters_grid.png — DPI: 300 — Kích thước: (6553, 1526) px
+PASS: radar_chart_clusters.png — DPI: 300 — Kích thước: (2322, 1993) px
+PASS: validation_happiness_score_by_cluster.png — DPI: 300 — Kích thước: (3000, 1800) px
+PASS: 100% hình ảnh kiểm tra đều đạt chuẩn độ phân giải cao 300 DPI.
+
+--- [NGÀY 21] TỔNG KẾT VÀ PHÊ DUYỆT NGHIỆM THU MỐC M3 ---
+KẾT LUẬN: TOÀN BỘ 7/7 HẠNG MỤC THẨM ĐỊNH MỐC M3 ĐÃ ĐẠT CHUẨN (PASS 100%).
+Xác nhận nghiệm thu Mốc M3: Số liệu thực nghiệm nhất quán, sẵn sàng bước vào Mốc M4 (Tự động hóa Báo cáo Word).
+================================================================================
