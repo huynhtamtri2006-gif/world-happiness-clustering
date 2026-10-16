@@ -1,0 +1,52 @@
+================================================================================
+BÁO CÁO KIỂM THỬ TRỰC QUAN HÓA (300 DPI) — MỐC M2
+Người thực hiện: Ngô Quang Trung (MSSV: 2045240325)
+Đề tài 16: Phân nhóm quốc gia theo các yếu tố hạnh phúc (World Happiness Report)
+Thời gian thực hiện: Mốc M2 (Ngày 8 – Ngày 14)
+================================================================================
+
+--- [MỤC 0] SỰ TỒN TẠI VÀ EXPORT CỦA 9 HÀM TRONG src/visualization/plots.py ---
+PASS: đầy đủ 9/9 hàm: plot_feature_distributions, plot_correlation_heatmap, plot_outliers_boxplot, plot_elbow_silhouette, plot_clusters_2d, plot_cluster_radar, plot_happiness_score_by_cluster, plot_cluster_profiles_bar, plot_dendrogram
+PASS: cả 9 hàm đã được export qua src/visualization/__init__.py.
+
+--- CHUẨN BỊ DỮ LIỆU KIỂM THỬ ---
+Dữ liệu interim: 781 dòng; năm 2019 có 156 quốc gia, 6 đặc trưng cơ sở.
+Bảng metric elbow/silhouette: 8 dòng; ma trận liên kết Ward mẫu: 39 dòng (40 lá).
+
+--- GỌI THỬ NGHIỆM LẦN LƯỢT CÁC HÀM VẼ VÀ KIỂM TRA ẢNH 300 DPI ---
+
+[1/10] plot_feature_distributions
+  PASS: test_feature_distributions.png — 479111 bytes, DPI = 300, kích thước 4469x2831 px
+
+[2/10] plot_correlation_heatmap
+  PASS: test_correlation_heatmap.png — 268027 bytes, DPI = 300, kích thước 2288x2066 px
+
+[3/10] plot_outliers_boxplot
+  PASS: test_outliers_boxplot.png — 215121 bytes, DPI = 300, kích thước 3572x1825 px
+
+[4/10] plot_elbow_silhouette
+  PASS: test_elbow_silhouette.png — 223861 bytes, DPI = 300, kích thước 4170x1473 px
+
+[5/10] plot_clusters_2d
+  PASS: test_clusters_2d.png — 240790 bytes, DPI = 300, kích thước 2302x1671 px
+
+[6/10] plot_cluster_radar
+  PASS: test_cluster_radar.png — 546098 bytes, DPI = 300, kích thước 2509x2551 px
+
+[7/10] plot_happiness_score_by_cluster
+  PASS: test_happiness_score_by_cluster.png — 114393 bytes, DPI = 300, kích thước 2971x1768 px
+
+[8/10] plot_cluster_profiles_bar
+  PASS: test_cluster_profiles_bar.png — 152357 bytes, DPI = 300, kích thước 3571x1828 px
+
+[9/10] plot_dendrogram
+  PASS: test_dendrogram.png — 200795 bytes, DPI = 300, kích thước 3571x1938 px
+
+[10/10] plot_dendrogram (truncate_mode='lastp')
+  PASS: test_dendrogram_lastp.png — 120861 bytes, DPI = 300, kích thước 3571x1931 px
+
+================================================================================
+TỔNG KẾT: 10/10 bài test sinh ảnh đạt chuẩn 300 DPI.
+KẾT LUẬN: TOÀN BỘ HÀM TRỰC QUAN HÓA MỐC M2 ĐẠT CHUẨN (PASS 100%).
+Xác nhận: module plots.py sẵn sàng phục vụ Notebook 02, Notebook 04 và Báo cáo Word.
+================================================================================
