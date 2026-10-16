@@ -1,0 +1,42 @@
+================================================================================
+BÁO CÁO KIỂM TOÁN CHẤT LƯỢNG DỮ LIỆU & BẢNG MÃ ISO-3 — MỐC M1
+Người thực hiện: Ngô Quang Trung (MSSV: 2045240325)
+Đề tài 16: Phân nhóm quốc gia theo các yếu tố hạnh phúc (World Happiness Report)
+Thời gian thực hiện: Mốc M1 (Ngày 3 – Ngày 7)
+================================================================================
+
+--- [MỤC 1 — NGÀY 3] CỠ MẪU VÀ TÍNH DUY NHẤT CỦA DỮ LIỆU THÔ 5 NĂM ---
+PASS: Cỡ mẫu dữ liệu thô năm 2015 — 158 dòng (kỳ vọng 158)
+PASS: Cỡ mẫu dữ liệu thô năm 2016 — 157 dòng (kỳ vọng 157)
+PASS: Cỡ mẫu dữ liệu thô năm 2017 — 155 dòng (kỳ vọng 155)
+PASS: Cỡ mẫu dữ liệu thô năm 2018 — 156 dòng (kỳ vọng 156)
+PASS: Cỡ mẫu dữ liệu thô năm 2019 — 156 dòng (kỳ vọng 156)
+Tổng số dòng thô 5 năm: 782 dòng.
+PASS: Không có quốc gia trùng lặp trong từng năm dữ liệu thô — 0 trùng lặp
+PASS: Giá trị khuyết của 6 đặc trưng cơ sở trong dữ liệu thô — đúng 1 giá trị khuyết duy nhất: 2018 - United Arab Emirates - corruption_perception
+
+--- [MỤC 2 — NGÀY 4 + NGÀY 6] LOẠI TRỪ UAE 2018 VÀ CỠ MẪU INTERIM 781 DÒNG ---
+PASS: Bản ghi UAE năm 2018 tồn tại trong dữ liệu thô — 1 dòng
+PASS: UAE năm 2018 khuyết đúng cột corruption_perception — corruption_perception = NaN
+PASS: Tệp interim happiness_merged.csv tồn tại — C:\Users\xpaga\Documents\data_mining\data\interim\happiness_merged.csv
+PASS: Tổng số dòng bảng interim — 781 dòng (kỳ vọng 781 dòng sạch)
+PASS: Cỡ mẫu từng năm trong bảng interim — 2015: 158, 2016: 157, 2017: 155, 2018: 155, 2019: 156 (kỳ vọng 158/157/155/155/156)
+PASS: Bản ghi UAE năm 2018 đã bị loại an toàn khỏi bảng interim — 0 dòng UAE 2018 tồn tại trong interim
+PASS: 6 đặc trưng cơ sở trong bảng interim không khuyết thiếu — 0 giá trị khuyết
+
+--- [MỤC 3 — NGÀY 5] ÁNH XẠ MÃ ISO-3 PHỤC VỤ BẢN ĐỒ CHOROPLETH ---
+PASS: Không có mã ISO-3 bị None hoặc rỗng — 0 giá trị None, 0 giá trị rỗng
+PASS: 100% mã ISO-3 hợp lệ (đúng 3 chữ cái in hoa) — 781/781 dòng đạt mẫu [A-Z]{3}
+PASS: Mỗi quốc gia chỉ ánh xạ về một mã ISO-3 duy nhất xuyên 5 năm — 0 quốc gia bị gán nhiều mã
+PASS: Mã ISO-3 khớp với hàm tra cứu country_to_iso3 — khớp 100%
+Thông tin: interim có 164 quốc gia duy nhất trên 781 dòng; 162 mã ISO-3 phân biệt.
+
+--- [MỤC 4 — NGÀY 4] SCHEMA INTERIM VÀ LOẠI BỎ CỘT SAI SỐ KHẢO SÁT ---
+PASS: Schema interim đúng 13 cột chuẩn INTERIM_COLUMNS — đúng 13 cột theo thứ tự chuẩn
+PASS: Không còn cột sai số khảo sát (Standard Error / Whisker / Confidence Interval) — 0 cột sai số
+
+================================================================================
+KẾT LUẬN: TOÀN BỘ HẠNG MỤC KIỂM TOÁN MỐC M1 ĐÃ ĐẠT CHUẨN (PASS 100%).
+Xác nhận: Cỡ mẫu 158/157/155/156/156 đúng; UAE 2018 đã loại an toàn (interim 781 dòng);
+mã ISO-3 của 781 dòng hợp lệ 100%, sẵn sàng cho bản đồ Choropleth.
+================================================================================
