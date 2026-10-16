@@ -32,11 +32,11 @@ Phụ trách chính **Giai đoạn 3, 5, 9, 10, 11** của quy trình khai phá 
 - [x] **Ngày 2:** Liệt kê các câu hỏi kỹ thuật và nghiệp vụ cần trả lời ở phần thảo luận và kết luận; đóng góp vào kế hoạch thực thi 28 ngày.
 
 #### 🔹 Mốc M1: Đánh giá chất lượng dữ liệu & Nghiên cứu bối cảnh (Ngày 3 – Ngày 7)
-- [ ] **Ngày 3:** Lập bảng đánh giá chất lượng dữ liệu 5 năm (tỷ lệ missing, trùng lặp, cỡ mẫu từng năm: 158/157/155/156/156).
-- [ ] **Ngày 4:** Nghiên cứu và tổng hợp tài liệu phương pháp luận: Thang đo Cantril Ladder (0 đến 10), khái niệm quốc gia giả định Dystopia và 6 yếu tố giải thích.
-- [ ] **Ngày 5:** Kiểm tra và chuẩn hóa bảng mã quốc gia 3 ký tự (ISO-3) để đảm bảo vẽ bản đồ thế giới Choropleth không bị khuyết màu.
-- [ ] **Ngày 6:** Ghi nhận lý do loại trừ dữ liệu UAE 2018 và xác nhận cỡ mẫu từng năm vào tài liệu.
-- [ ] **Ngày 7:** Soạn thảo bản nháp bộ 20 câu hỏi vấn đáp cho 3 thành viên; tham gia buổi Walkthrough của Trường.
+- [x] **Ngày 3:** Lập bảng đánh giá chất lượng dữ liệu 5 năm (tỷ lệ missing, trùng lặp, cỡ mẫu từng năm: 158/157/155/156/156).
+- [x] **Ngày 4:** Nghiên cứu và tổng hợp tài liệu phương pháp luận: Thang đo Cantril Ladder (0 đến 10), khái niệm quốc gia giả định Dystopia và 6 yếu tố giải thích.
+- [x] **Ngày 5:** Kiểm tra và chuẩn hóa bảng mã quốc gia 3 ký tự (ISO-3) để đảm bảo vẽ bản đồ thế giới Choropleth không bị khuyết màu.
+- [x] **Ngày 6:** Ghi nhận lý do loại trừ dữ liệu UAE 2018 và xác nhận cỡ mẫu từng năm vào tài liệu.
+- [x] **Ngày 7:** Soạn thảo bản nháp bộ 20 câu hỏi vấn đáp cho 3 thành viên; tham gia buổi Walkthrough của Trường.
 
 #### 🔹 Mốc M2: Xây dựng biểu đồ trực quan & Phân tích EDA (Ngày 8 – Ngày 14)
 - [ ] **Ngày 8 (Họp nhóm):** Hoàn thiện các hàm vẽ biểu đồ trong [`src/visualization/plots.py`](../../src/visualization/plots.py):
