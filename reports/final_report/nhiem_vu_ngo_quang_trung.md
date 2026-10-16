@@ -39,7 +39,7 @@ Phụ trách chính **Giai đoạn 3, 5, 9, 10, 11** của quy trình khai phá 
 - [x] **Ngày 7:** Soạn thảo bản nháp bộ 20 câu hỏi vấn đáp cho 3 thành viên; tham gia buổi Walkthrough của Trường.
 
 #### 🔹 Mốc M2: Xây dựng biểu đồ trực quan & Phân tích EDA (Ngày 8 – Ngày 14)
-- [ ] **Ngày 8 (Họp nhóm):** Hoàn thiện các hàm vẽ biểu đồ trong [`src/visualization/plots.py`](../../src/visualization/plots.py):
+- [x] **Ngày 8 (Họp nhóm):** Hoàn thiện các hàm vẽ biểu đồ trong [`src/visualization/plots.py`](../../src/visualization/plots.py):
   - `plot_feature_distributions` (Histogram + đường cong KDE).
   - `plot_correlation_heatmap` (Ma trận tương quan Pearson).
   - `plot_outliers_boxplot` (Biểu đồ hộp phát hiện ngoại lai).
@@ -47,17 +47,17 @@ Phụ trách chính **Giai đoạn 3, 5, 9, 10, 11** của quy trình khai phá 
   - `plot_cluster_radar` (Radar chart đa giác 6 yếu tố).
   - `plot_dendrogram` (Cây phân cấp).
   - `plot_happiness_score_by_cluster` (Boxplot hậu kiểm điểm hạnh phúc).
-- [ ] **Ngày 9:** Thực hiện [`notebooks/02_exploratory_data_analysis.ipynb`](../../notebooks/02_exploratory_data_analysis.ipynb):
+- [x] **Ngày 9:** Thực hiện [`notebooks/02_exploratory_data_analysis.ipynb`](../../notebooks/02_exploratory_data_analysis.ipynb):
   - Tính toán độ lệch skewness và nhận xét phân bố từng đặc trưng.
   - Phân tích tương quan: Chỉ ra mối quan hệ rất mạnh giữa GDP, Tuổi thọ và Hỗ trợ xã hội ($r > 0.7$).
-- [ ] **Ngày 10:** Phát hiện các quốc gia có giá trị ngoại lai dị biệt (ví dụ: điểm tham nhũng cao đột biến ở một số nước phát triển, điểm hỗ trợ xã hội rất thấp ở một số nước châu Phi).
-- [ ] **Ngày 11:** Phân tích thực nghiệm so sánh Z-score và Min-Max, đưa ra luận điểm thuyết phục vì sao chọn Z-score làm cấu hình chính của đề tài.
-- [ ] **Ngày 12:** Xuất các hình ảnh phân tích EDA độ phân giải cao vào [`reports/figures/`](../../reports/figures):
+- [x] **Ngày 10:** Phát hiện các quốc gia có giá trị ngoại lai dị biệt (ví dụ: điểm tham nhũng cao đột biến ở một số nước phát triển, điểm hỗ trợ xã hội rất thấp ở một số nước châu Phi).
+- [x] **Ngày 11:** Phân tích thực nghiệm so sánh Z-score và Min-Max, đưa ra luận điểm thuyết phục vì sao chọn Z-score làm cấu hình chính của đề tài.
+- [x] **Ngày 12:** Xuất các hình ảnh phân tích EDA độ phân giải cao vào [`reports/figures/`](../../reports/figures):
   - `feature_distributions.png`
   - `correlation_heatmap.png`
   - `boxplots_outliers.png`
-- [ ] **Ngày 13:** Kiểm tra thời gian chạy của các hàm vẽ biểu đồ; đảm bảo hình vẽ hiển thị nhãn tiếng Việt rõ ràng, có thước đo độ phân giải.
-- [ ] **Ngày 14:** Tham gia buổi Walkthrough module thuật toán của Trí.
+- [x] **Ngày 13:** Kiểm tra thời gian chạy của các hàm vẽ biểu đồ; đảm bảo hình vẽ hiển thị nhãn tiếng Việt rõ ràng, có thước đo độ phân giải.
+- [x] **Ngày 14:** Tham gia buổi Walkthrough module thuật toán của Trí.
 
 #### 🔹 Mốc M3: Diễn giải tri thức, Ghép cụm liên năm & Bảng dịch chuyển (Ngày 15 – Ngày 21)
 - [ ] **Ngày 15 (Họp nhóm):** Khởi tạo khung phân tích cho [`notebooks/04_cluster_profiling_and_evaluation.ipynb`](../../notebooks/04_cluster_profiling_and_evaluation.ipynb).
