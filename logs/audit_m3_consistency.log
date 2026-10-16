@@ -31,28 +31,36 @@ PASS: 100% danh sách quốc gia giữa bảng interim và kết quả gom cụm
 
 --- [NGÀY 19] THẨM ĐỊNH BẢNG DỊCH CHUYỂN CỤM 156 QUỐC GIA ---
 PASS: country_cluster_shift.csv có đúng 156 quốc gia, 0 trùng lặp tên.
+PASS: 100% mã ISO-3 trong bảng dịch chuyển hợp lệ (đúng 3 chữ cái in hoa), 0 giá trị rỗng.
+PASS: Đúng 17 ô khuyết ở cột cụm, tất cả đều ứng với quốc gia không có dữ liệu năm tương ứng (bao gồm UAE 2018 loại có chủ đích).
+PASS: Các cột shift_status, shift_direction, is_stable không có giá trị khuyết.
+PASS: Phân bố trạng thái dịch chuyển khớp tài liệu: {'Ổn định tuyệt đối': 142, 'Biến động trung gian': 8, 'Cải thiện nhóm (+)': 4, 'Suy giảm nhóm (-)': 2}.
+PASS: Đúng 4 quốc gia thăng hạng: ['Botswana', 'Georgia', 'Indonesia', 'Myanmar'].
+PASS: Đúng 2 quốc gia tụt hạng: ['Kuwait', 'Uruguay'].
+PASS: Cột shift_direction nhất quán với shift_status: {'Không đổi': 150, 'Tăng': 4, 'Giảm': 2}.
+PASS: Cột is_stable nhất quán với trạng thái 'Ổn định tuyệt đối'.
 PASS: Bản ghi United Arab Emirates (UAE) năm 2018 hiển thị NaN hợp lệ (đã loại bỏ an toàn do khuyết chỉ số tham nhũng).
 Thống kê độ ổn định: {'Ổn định tuyệt đối': 142, 'Biến động trung gian': 8, 'Cải thiện nhóm (+)': 4, 'Suy giảm nhóm (-)': 2}
 
 --- [NGÀY 20] KIỂM TRA ĐỘ PHÂN GIẢI TOÀN BỘ HÌNH ẢNH (300 DPI) ---
 Tổng số hình ảnh tìm thấy trong reports/figures/: 16 hình.
 PASS: Đạt và vượt chỉ tiêu số lượng (>= 12 hình ảnh phục vụ Báo cáo Word).
-PASS: boxplots_outliers.png — DPI: 300 — Kích thước: (3556, 1806) px
-PASS: cluster_count_trend.png — DPI: 300 — Kích thước: (3358, 1812) px
-PASS: correlation_heatmap.png — DPI: 300 — Kích thước: (2403, 1928) px
+PASS: boxplots_outliers.png — DPI: 300 — Kích thước: (3556, 1808) px
+PASS: cluster_count_trend.png — DPI: 300 — Kích thước: (3358, 1810) px
+PASS: correlation_heatmap.png — DPI: 300 — Kích thước: (2315, 2076) px
 PASS: elbow_silhouette_kmeans.png — DPI: 300 — Kích thước: (4170, 1473) px
-PASS: feature_distributions.png — DPI: 300 — Kích thước: (4200, 2400) px
+PASS: feature_distributions.png — DPI: 300 — Kích thước: (4457, 2818) px
 PASS: k_sensitivity_2015.png — DPI: 300 — Kích thước: (2100, 1200) px
 PASS: k_sensitivity_2016.png — DPI: 300 — Kích thước: (2100, 1200) px
 PASS: k_sensitivity_2017.png — DPI: 300 — Kích thước: (2100, 1200) px
 PASS: k_sensitivity_2018.png — DPI: 300 — Kích thước: (2100, 1200) px
 PASS: k_sensitivity_2019.png — DPI: 300 — Kích thước: (2100, 1200) px
 PASS: pca_clusters_2019.png — DPI: 300 — Kích thước: (2652, 1752) px
-PASS: pca_clusters_grid.png — DPI: 300 — Kích thước: (6552, 1634) px
+PASS: pca_clusters_grid.png — DPI: 300 — Kích thước: (6553, 1634) px
 PASS: radar_chart_2019.png — DPI: 300 — Kích thước: (3190, 1827) px
-PASS: radar_chart_clusters.png — DPI: 300 — Kích thước: (3358, 1999) px
+PASS: radar_chart_clusters.png — DPI: 300 — Kích thước: (3358, 1909) px
 PASS: validation_happiness_score_2019.png — DPI: 300 — Kích thước: (2612, 1602) px
-PASS: validation_happiness_score_by_cluster.png — DPI: 300 — Kích thước: (3190, 1812) px
+PASS: validation_happiness_score_by_cluster.png — DPI: 300 — Kích thước: (3190, 1811) px
 PASS: 100% hình ảnh kiểm tra đều đạt chuẩn độ phân giải cao 300 DPI.
 
 --- [NGÀY 21] TỔNG KẾT VÀ PHÊ DUYỆT NGHIỆM THU MỐC M3 ---
