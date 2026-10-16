@@ -13,6 +13,7 @@ if hasattr(sys.stdout, 'reconfigure'):
         pass
 
 import io
+import re
 from pathlib import Path
 import pandas as pd
 from PIL import Image
@@ -157,11 +158,26 @@ def audit():
     # --------------------------------------------------------------------------
     log("\n--- [NGÀY 19] THẨM ĐỊNH BẢNG DỊCH CHUYỂN CỤM 156 QUỐC GIA ---")
     shift_path = processed_dir / "country_cluster_shift.csv"
+
+    # Số liệu chuẩn đã đối chiếu với tài liệu M3 và các hình/bảng trong báo cáo
+    expected_status_counts = {
+        "Ổn định tuyệt đối": 142,
+        "Biến động trung gian": 8,
+        "Cải thiện nhóm (+)": 4,
+        "Suy giảm nhóm (-)": 2,
+    }
+    expected_direction_counts = {"Không đổi": 150, "Tăng": 4, "Giảm": 2}
+    expected_improved = {"Botswana", "Georgia", "Indonesia", "Myanmar"}
+    expected_declined = {"Kuwait", "Uruguay"}
+    iso3_pattern = re.compile(r"^[A-Z]{3}$")
+
     if not shift_path.exists():
         log("FAIL: Không tìm thấy data/processed/country_cluster_shift.csv")
         all_passed = False
     else:
         df_shift = pd.read_csv(shift_path)
+        cluster_columns = [c for c in df_shift.columns if c.startswith("cluster_")]
+
         if len(df_shift) != 156:
             log(f"FAIL: country_cluster_shift.csv có {len(df_shift)} dòng, kỳ vọng đúng 156 dòng chuẩn WHR")
             all_passed = False
@@ -170,15 +186,115 @@ def audit():
             all_passed = False
         else:
             log("PASS: country_cluster_shift.csv có đúng 156 quốc gia, 0 trùng lặp tên.")
-            
-            # Kiểm tra bản ghi UAE năm 2018
+
+            # (a) Cột iso3: đủ, đúng định dạng 3 chữ cái in hoa, không rỗng
+            if "iso3" not in df_shift.columns:
+                log("FAIL: Thiếu cột iso3 trong bảng dịch chuyển cụm")
+                all_passed = False
+            else:
+                iso_series = df_shift["iso3"].astype(str).str.strip()
+                invalid_iso = df_shift.loc[
+                    ~iso_series.apply(lambda value: bool(iso3_pattern.match(value))), "country"
+                ].tolist()
+                if invalid_iso:
+                    log(f"FAIL: {len(invalid_iso)} mã ISO-3 không hợp lệ hoặc rỗng: {invalid_iso[:8]}")
+                    all_passed = False
+                else:
+                    log("PASS: 100% mã ISO-3 trong bảng dịch chuyển hợp lệ (đúng 3 chữ cái in hoa), 0 giá trị rỗng.")
+
+            # (b) Giá trị khuyết: chỉ được khuyết ở ô mà quốc gia thực sự không có dữ liệu năm đó.
+            #     Đối chiếu chéo với bảng interim, bao gồm trường hợp UAE 2018 bị loại có chủ đích.
+            interim_path = project_root / "data" / "interim" / "happiness_merged.csv"
+            df_interim_local = pd.read_csv(interim_path)
+            present_pairs = set(zip(df_interim_local["country"], df_interim_local["year"]))
+
+            unexpected_missing = []
+            for _, shift_row in df_shift.iterrows():
+                for year in YEARS:
+                    column = f"cluster_{year}"
+                    if pd.isna(shift_row[column]) and (shift_row["country"], year) in present_pairs:
+                        unexpected_missing.append((shift_row["country"], year))
+
+            missing_cluster = int(df_shift[cluster_columns].isna().sum().sum())
+            expected_missing_cells = 17
+            if missing_cluster == expected_missing_cells and not unexpected_missing:
+                log(
+                    f"PASS: Đúng {missing_cluster} ô khuyết ở cột cụm, tất cả đều ứng với quốc gia "
+                    "không có dữ liệu năm tương ứng (bao gồm UAE 2018 loại có chủ đích)."
+                )
+            else:
+                log(
+                    f"FAIL: Số ô khuyết = {missing_cluster} (kỳ vọng {expected_missing_cells}); "
+                    f"số ô khuyết bất thường = {len(unexpected_missing)}: {unexpected_missing[:5]}"
+                )
+                all_passed = False
+
+            meta_columns = [c for c in ["shift_status", "shift_direction", "is_stable"] if c in df_shift.columns]
+            meta_missing = int(df_shift[meta_columns].isna().sum().sum())
+            if len(meta_columns) == 3 and meta_missing == 0:
+                log("PASS: Các cột shift_status, shift_direction, is_stable không có giá trị khuyết.")
+            else:
+                log(f"FAIL: Thiếu cột hoặc có {meta_missing} giá trị khuyết ở cột trạng thái dịch chuyển.")
+                all_passed = False
+
+            # (c) Phân bố trạng thái dịch chuyển khớp tài liệu
+            actual_status_counts = df_shift["shift_status"].value_counts().to_dict()
+            if actual_status_counts == expected_status_counts:
+                log(f"PASS: Phân bố trạng thái dịch chuyển khớp tài liệu: {actual_status_counts}.")
+            else:
+                log(f"FAIL: Phân bố trạng thái lệch — thực tế {actual_status_counts}, kỳ vọng {expected_status_counts}.")
+                all_passed = False
+
+            # (d) Danh sách quốc gia thăng hạng / tụt hạng đúng như đề cương
+            improved = set(df_shift.loc[df_shift["shift_status"] == "Cải thiện nhóm (+)", "country"])
+            declined = set(df_shift.loc[df_shift["shift_status"] == "Suy giảm nhóm (-)", "country"])
+            if improved == expected_improved:
+                log(f"PASS: Đúng 4 quốc gia thăng hạng: {sorted(improved)}.")
+            else:
+                log(f"FAIL: Danh sách thăng hạng lệch — thực tế {sorted(improved)}, kỳ vọng {sorted(expected_improved)}.")
+                all_passed = False
+            if declined == expected_declined:
+                log(f"PASS: Đúng 2 quốc gia tụt hạng: {sorted(declined)}.")
+            else:
+                log(f"FAIL: Danh sách tụt hạng lệch — thực tế {sorted(declined)}, kỳ vọng {sorted(expected_declined)}.")
+                all_passed = False
+
+            # (e) Cột shift_direction nhất quán với shift_status
+            actual_direction_counts = df_shift["shift_direction"].value_counts().to_dict()
+            direction_ok = actual_direction_counts == expected_direction_counts
+            consistency_ok = bool(
+                (
+                    df_shift["shift_direction"]
+                    == df_shift["shift_status"].map(
+                        {"Cải thiện nhóm (+)": "Tăng", "Suy giảm nhóm (-)": "Giảm"}
+                    ).fillna("Không đổi")
+                ).all()
+            )
+            if direction_ok and consistency_ok:
+                log(f"PASS: Cột shift_direction nhất quán với shift_status: {actual_direction_counts}.")
+            else:
+                log(f"FAIL: shift_direction không nhất quán — thực tế {actual_direction_counts}.")
+                all_passed = False
+
+            # (f) Cột is_stable nhất quán với shift_status
+            stable_ok = bool(
+                (df_shift["is_stable"] == (df_shift["shift_status"] == "Ổn định tuyệt đối")).all()
+            )
+            if stable_ok:
+                log("PASS: Cột is_stable nhất quán với trạng thái 'Ổn định tuyệt đối'.")
+            else:
+                log("FAIL: Cột is_stable không khớp với shift_status.")
+                all_passed = False
+
+            # (g) Bản ghi UAE năm 2018 khuyết có chủ đích
             uae_row = df_shift[df_shift["country"] == "United Arab Emirates"]
             if len(uae_row) > 0 and pd.isna(uae_row["cluster_2018"].values[0]):
                 log("PASS: Bản ghi United Arab Emirates (UAE) năm 2018 hiển thị NaN hợp lệ (đã loại bỏ an toàn do khuyết chỉ số tham nhũng).")
             else:
-                log("NOTE: Kiểm tra lại ghi nhận UAE năm 2018.")
-                
-            log(f"Thống kê độ ổn định: {df_shift['shift_status'].value_counts().to_dict()}")
+                log("FAIL: Bản ghi UAE năm 2018 không đúng trạng thái khuyết có chủ đích.")
+                all_passed = False
+
+            log(f"Thống kê độ ổn định: {actual_status_counts}")
 
     # --------------------------------------------------------------------------
     # NGÀY 20: Kiểm tra toàn bộ hình ảnh xuất ra bảo đảm đúng độ phân giải 300 DPI

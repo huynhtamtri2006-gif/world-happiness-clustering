@@ -60,23 +60,23 @@ Phụ trách chính **Giai đoạn 3, 5, 9, 10, 11** của quy trình khai phá 
 - [x] **Ngày 14:** Tham gia buổi Walkthrough module thuật toán của Trí.
 
 #### 🔹 Mốc M3: Diễn giải tri thức, Ghép cụm liên năm & Bảng dịch chuyển (Ngày 15 – Ngày 21)
-- [ ] **Ngày 15 (Họp nhóm):** Khởi tạo khung phân tích cho [`notebooks/04_cluster_profiling_and_evaluation.ipynb`](../../notebooks/04_cluster_profiling_and_evaluation.ipynb).
-- [ ] **Ngày 16:** 
+- [x] **Ngày 15 (Họp nhóm):** Khởi tạo khung phân tích cho [`notebooks/04_cluster_profiling_and_evaluation.ipynb`](../../notebooks/04_cluster_profiling_and_evaluation.ipynb).
+- [x] **Ngày 16:** 
   - Thực hiện giảm chiều dữ liệu bằng SimplePCA xuống 2D trên cả 5 năm.
   - Vẽ lưới biểu đồ phân bố cụm 5 năm: `reports/figures/pca_clusters_grid.png`.
-- [ ] **Ngày 17:** 
+- [x] **Ngày 17:** 
   - **Xây dựng chân dung cụm (*Cluster Profiling*):** Tính giá trị trung bình 6 yếu tố cho từng nhóm, vẽ biểu đồ Radar Chart cho các năm.
   - Đặt tên có ý nghĩa kinh tế - xã hội cho các cụm (ví dụ: *Cụm 1 — Phát triển toàn diện*, *Cụm 2 — Đang phát triển phụ thuộc kinh tế*, *Cụm 3 — Dễ bị tổn thương & Khó khăn*).
-- [ ] **Ngày 18:** 
+- [x] **Ngày 18:** 
   - **Hậu kiểm độc lập (*Post-clustering Validation*):** Đối chiếu nhãn cụm với điểm hạnh phúc thực tế (`happiness_score`).
   - Vẽ biểu đồ boxplot phân bố điểm hạnh phúc giữa các cụm (`validation_happiness_score_by_cluster.png`), chứng minh các cụm có sự phân hóa điểm sống thực tế sâu sắc.
-- [ ] **Ngày 19:** 
+- [x] **Ngày 19:** 
   - **Thuật toán ghép cụm liên năm (`match_clusters_greedy`):** Ghép cặp cụm giữa năm $t$ và năm $t-1$ theo khoảng cách tâm cụm nhỏ nhất; nếu khoảng cách bằng nhau thì xét điểm hạnh phúc trung bình.
   - Xuất bảng ghép cụm liên năm: `reports/tables/cross_year_matching.csv`.
-- [ ] **Ngày 20:** 
+- [x] **Ngày 20:** 
   - **Xây dựng bảng dịch chuyển cụm của 156 quốc gia qua 5 năm:** Theo dõi quốc gia nào tăng nhóm, quốc gia nào tụt nhóm hoặc giữ nguyên ổn định ➔ xuất file [`data/processed/country_cluster_shift.csv`](../../data/processed).
   - Vẽ biểu đồ xu hướng số lượng quốc gia theo từng cụm qua thời gian: `reports/figures/cluster_count_trend.png` và xuất `cluster_trends.csv`.
-- [ ] **Ngày 21:** Tổ chức buổi **Walkthrough 20 phút** trình bày kết quả Diễn giải tri thức và bảng dịch chuyển cho Trường và Trí; hoàn thành Mục 8, 9, 10, 11 của báo cáo.
+- [x] **Ngày 21:** Tổ chức buổi **Walkthrough 20 phút** trình bày kết quả Diễn giải tri thức và bảng dịch chuyển cho Trường và Trí; hoàn thành Mục 8, 9, 10, 11 của báo cáo.
 
 #### 🔹 Mốc M4: Hoàn thiện Ứng dụng Demo Streamlit & Thiết kế Slide (Ngày 22 – Ngày 26)
 - [ ] **Ngày 22 (Họp nhóm):** Thiết kế nâng cấp ứng dụng tương tác [`app/app.py`](../../app/app.py).

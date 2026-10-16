@@ -2,6 +2,13 @@
 Script tạo bảng dịch chuyển cụm liên năm và trực quan hóa M3 (300 DPI)
 Học phần: Khai thác dữ liệu (Data Mining) — Đề tài 16: World Happiness Report
 Phụ trách kiểm toán: Hà Mạnh Trường (Nhóm trưởng)
+Đồng bộ và kiểm chứng M3 (Ngày 19 – Ngày 20): Ngô Quang Trung (2045240325)
+
+Ghi chú đồng bộ:
+- Các hình EDA (feature_distributions, correlation_heatmap, boxplots_outliers) dùng chung
+  hàm vẽ trong src/visualization/plots.py để thống nhất với Notebook 02.
+- Bảng dịch chuyển cụm có thêm cột `iso3` (phục vụ bản đồ Choropleth) và `shift_direction`
+  (chiều dịch chuyển ròng 2015 -> 2019).
 """
 
 import sys
@@ -22,12 +29,17 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+from src.data import data_loader
 from src.models.clustering import match_clusters_greedy, euclidean_distance
 from src.features.feature_engineering import SimplePCA
+from src.visualization.plots import (
+    plot_feature_distributions,
+    plot_correlation_heatmap,
+    plot_outliers_boxplot,
+)
 tables_dir = project_root / "reports" / "tables"
 figures_dir = project_root / "reports" / "figures"
 processed_dir = project_root / "data" / "processed"
-interim_path = project_root / "data" / "interim" / "happiness_merged.csv"
 
 tables_dir.mkdir(parents=True, exist_ok=True)
 figures_dir.mkdir(parents=True, exist_ok=True)
@@ -47,7 +59,7 @@ years = [2015, 2016, 2017, 2018, 2019]
 
 def main():
     print("=== 1. TẢI DỮ LIỆU VÀ MÔ HÌNH K-MEANS 5 NĂM ===")
-    df_interim = pd.read_csv(interim_path)
+    df_interim = data_loader.load_interim()
     
     models = {y: json.load(open(project_root / f"models/kmeans_{y}.json", encoding="utf-8")) for y in years}
     raw_contrast_dfs = {y: pd.read_csv(processed_dir / f"contrast_k3/contrast_k3_kmeans_{y}.csv") for y in years}
@@ -109,9 +121,17 @@ def main():
     country_list = sorted(df_2019_base["country"].unique())
     print(f"Số lượng quốc gia năm cơ sở 2019: {len(country_list)}")
 
+    # Bảng tra cứu mã ISO-3 từ dữ liệu interim (đã kiểm toán 100% hợp lệ ở Mốc M1)
+    iso3_map = (
+        df_interim.dropna(subset=["iso_alpha"])
+        .drop_duplicates("country")
+        .set_index("country")["iso_alpha"]
+        .to_dict()
+    )
+
     shift_records = []
     for c in country_list:
-        row = {"country": c}
+        row = {"country": c, "iso3": iso3_map.get(c, "")}
         c_labels = []
         for y in years:
             sub = aligned_dfs[y][aligned_dfs[y]["country"] == c]
@@ -133,17 +153,34 @@ def main():
             status = "Suy giảm nhóm (-)"
         else:
             status = "Biến động trung gian"
-            
+
+        # Chiều dịch chuyển ròng giữa năm đầu và năm cuối (0 = hạnh phúc cao nhất)
+        if status == "Cải thiện nhóm (+)":
+            direction = "Tăng"
+        elif status == "Suy giảm nhóm (-)":
+            direction = "Giảm"
+        else:
+            direction = "Không đổi"
+
         row["shift_status"] = status
+        row["shift_direction"] = direction
         row["is_stable"] = (len(set(valid_labels)) == 1)
         shift_records.append(row)
 
-    df_shift = pd.DataFrame(shift_records)
+    shift_columns = (
+        ["country", "iso3"]
+        + [f"cluster_{y}" for y in years]
+        + ["shift_status", "shift_direction", "is_stable"]
+    )
+    df_shift = pd.DataFrame(shift_records)[shift_columns]
     shift_csv_path = processed_dir / "country_cluster_shift.csv"
     df_shift.to_csv(shift_csv_path, index=False)
     print(f"Đã lưu bảng dịch chuyển cụm 156 quốc gia: {shift_csv_path}")
+    print(f"Số quốc gia thiếu mã ISO-3: {int((df_shift['iso3'].astype(str).str.strip() == '').sum())}")
     print("Phân bố trạng thái dịch chuyển:")
     print(df_shift["shift_status"].value_counts())
+    print("Phân bố chiều dịch chuyển:")
+    print(df_shift["shift_direction"].value_counts())
 
     # 4. TẠO BẢNG XU HƯỚNG CỤM (cluster_trends.csv)
     print("=== 4. XÂY DỰNG BẢNG XU HƯỚNG CỤM THEO THỜI GIAN ===")
@@ -291,52 +328,31 @@ def main():
     plt.close()
     print("Đã xuất hình: radar_chart_clusters.png (300 DPI, tên thuộc tính tiếng Anh, không chạm viền)")
 
-    # Hình E, F, G: EDA figures (luôn cập nhật mới nhất)
-    _draw_distributions(df_interim)
-    print("Đã xuất hình EDA: feature_distributions.png (300 DPI)")
-    _draw_correlation(df_interim)
-    print("Đã xuất hình EDA: correlation_heatmap.png (300 DPI)")
-    _draw_outliers(df_interim)
-    print("Đã xuất hình EDA: boxplots_outliers.png (300 DPI)")
+    # Hình E, F, G: các hình EDA dùng chung hàm vẽ trong src/visualization/plots.py
+    fig_eda = plot_feature_distributions(
+        df_interim, FEATURE_COLUMNS,
+        save_path=figures_dir / "feature_distributions.png"
+    )
+    plt.close(fig_eda)
+    print("Đã xuất hình EDA: feature_distributions.png (300 DPI, hàm dùng chung plots.py)")
+
+    fig_eda = plot_correlation_heatmap(
+        df_interim, FEATURE_COLUMNS + ["happiness_score"],
+        save_path=figures_dir / "correlation_heatmap.png",
+        title="Ma Trận Tương Quan Pearson (6 Yếu Tố & Điểm Hạnh Phúc)"
+    )
+    plt.close(fig_eda)
+    print("Đã xuất hình EDA: correlation_heatmap.png (300 DPI, hàm dùng chung plots.py)")
+
+    fig_eda = plot_outliers_boxplot(
+        df_interim, FEATURE_COLUMNS,
+        save_path=figures_dir / "boxplots_outliers.png"
+    )
+    plt.close(fig_eda)
+    print("Đã xuất hình EDA: boxplots_outliers.png (300 DPI, hàm dùng chung plots.py)")
 
     print("\n=== HOÀN TẤT SINH DỮ LIỆU VÀ TRỰC QUAN HÓA M3 ===")
 
-def _draw_distributions(df):
-    plt.figure(figsize=(14, 8))
-    for i, col in enumerate(FEATURE_COLUMNS, 1):
-        plt.subplot(2, 3, i)
-        sns.histplot(df[col], kde=True, color="#3498db")
-        plt.title(f"Phân bố: {col}", fontsize=11, fontweight="bold")
-    plt.tight_layout()
-    plt.savefig(figures_dir / "feature_distributions.png", dpi=300)
-    plt.close()
-
-def _draw_correlation(df):
-    plt.figure(figsize=(8.5, 6.5))
-    corr = df[FEATURE_COLUMNS + ["happiness_score"]].corr()
-    sns.heatmap(corr, annot=True, fmt=".2f", cmap="coolwarm", cbar=True)
-    plt.title("Ma Trận Tương Quan Pearson (6 Yếu Tố & Điểm Hạnh Phúc)", fontsize=12, pad=12, fontweight="bold")
-    plt.tight_layout()
-    plt.savefig(figures_dir / "correlation_heatmap.png", dpi=300, bbox_inches="tight")
-    plt.close()
-
-def _draw_outliers(df):
-    plt.figure(figsize=(12, 6.2))
-    # Min-max scale để vẽ chung boxplot trên cùng một thang đo [0, 1]
-    sub = df[FEATURE_COLUMNS]
-    scaled = (sub - sub.min()) / (sub.max() - sub.min())
-    
-    flierprops = dict(marker="o", markersize=5.5, markerfacecolor="#e74c3c", markeredgecolor="#c0392b", alpha=0.7)
-    sns.boxplot(data=scaled, palette="Set2", flierprops=flierprops, linewidth=1.5)
-    
-    plt.title("Biểu Đồ Hộp Phát Hiện Giá Trị Ngoại Lai (6 Đặc Trưng Sau Chuẩn Hóa)", fontsize=13, pad=15, fontweight="bold")
-    plt.xlabel("Thuộc Tính Cơ Sở (Feature Columns)", fontsize=11, labelpad=10)
-    plt.ylabel("Giá Trị Chuẩn Hóa [0, 1]", fontsize=11)
-    plt.ylim(-0.05, 1.05)
-    plt.xticks(fontsize=10, rotation=15)
-    plt.tight_layout()
-    plt.savefig(figures_dir / "boxplots_outliers.png", dpi=300, bbox_inches="tight")
-    plt.close()
 
 if __name__ == "__main__":
     main()

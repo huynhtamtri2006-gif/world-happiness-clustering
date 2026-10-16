@@ -1,157 +1,157 @@
-country,cluster_2015,cluster_2016,cluster_2017,cluster_2018,cluster_2019,shift_status,is_stable
-Afghanistan,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Albania,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Algeria,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Argentina,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Armenia,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Australia,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,True
-Austria,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,True
-Azerbaijan,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Bahrain,0.0,0.0,0.0,1.0,0,Biến động trung gian,False
-Bangladesh,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Belarus,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Belgium,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,True
-Benin,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Bhutan,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,True
-Bolivia,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Bosnia and Herzegovina,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Botswana,2.0,1.0,1.0,1.0,1,Cải thiện nhóm (+),False
-Brazil,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Bulgaria,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Burkina Faso,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Burundi,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Cambodia,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Cameroon,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Canada,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,True
-Central African Republic,2.0,,2.0,2.0,2,Ổn định tuyệt đối,True
-Chad,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Chile,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-China,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Colombia,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Comoros,2.0,2.0,,,2,Ổn định tuyệt đối,True
-Congo (Brazzaville),2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Congo (Kinshasa),2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Costa Rica,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Croatia,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Cyprus,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Czech Republic,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Denmark,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,True
-Dominican Republic,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Ecuador,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Egypt,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-El Salvador,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Estonia,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Eswatini,2.0,,,,2,Ổn định tuyệt đối,True
-Ethiopia,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Finland,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,True
-France,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Gabon,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Gambia,,,,,2,Ổn định tuyệt đối,True
-Georgia,2.0,2.0,2.0,2.0,1,Cải thiện nhóm (+),False
-Germany,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,True
-Ghana,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Greece,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Guatemala,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Guinea,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Haiti,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Honduras,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Hong Kong,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,True
-Hungary,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Iceland,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,True
-India,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Indonesia,1.0,1.0,1.0,1.0,0,Cải thiện nhóm (+),False
-Iran,1.0,1.0,2.0,1.0,1,Biến động trung gian,False
-Iraq,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Ireland,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,True
-Israel,1.0,1.0,1.0,0.0,1,Biến động trung gian,False
-Italy,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Ivory Coast,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Jamaica,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Japan,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Jordan,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Kazakhstan,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Kenya,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Kosovo,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Kuwait,0.0,1.0,0.0,1.0,1,Suy giảm nhóm (-),False
-Kyrgyzstan,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Laos,2.0,2.0,,2.0,2,Ổn định tuyệt đối,True
-Latvia,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Lebanon,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Lesotho,2.0,,2.0,2.0,2,Ổn định tuyệt đối,True
-Liberia,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Libya,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Lithuania,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Luxembourg,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,True
-Madagascar,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Malawi,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Malaysia,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Mali,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Malta,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,True
-Mauritania,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Mauritius,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Mexico,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Moldova,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Mongolia,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Montenegro,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Morocco,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Mozambique,2.0,,2.0,2.0,2,Ổn định tuyệt đối,True
-Myanmar,2.0,2.0,2.0,0.0,0,Cải thiện nhóm (+),False
-Namibia,,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Nepal,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Netherlands,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,True
-New Zealand,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,True
-Nicaragua,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Niger,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Nigeria,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-North Cyprus,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-North Macedonia,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Norway,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,True
-Pakistan,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Palestinian Territories,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Panama,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Paraguay,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Peru,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Philippines,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Poland,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Portugal,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Qatar,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,True
-Romania,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Russia,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Rwanda,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Saudi Arabia,1.0,1.0,0.0,1.0,1,Biến động trung gian,False
-Senegal,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Serbia,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Sierra Leone,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Singapore,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,True
-Slovakia,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Slovenia,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Somalia,,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-South Africa,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-South Korea,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-South Sudan,,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Spain,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Sri Lanka,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Sweden,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,True
-Switzerland,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,True
-Syria,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Taiwan,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Tajikistan,2.0,2.0,1.0,2.0,2,Biến động trung gian,False
-Tanzania,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Thailand,0.0,0.0,0.0,1.0,0,Biến động trung gian,False
-Togo,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Trinidad and Tobago,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Tunisia,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Turkey,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Turkmenistan,1.0,1.0,0.0,1.0,1,Biến động trung gian,False
-Uganda,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Ukraine,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-United Arab Emirates,0.0,0.0,0.0,,0,Ổn định tuyệt đối,True
-United Kingdom,0.0,0.0,0.0,1.0,0,Biến động trung gian,False
-United States,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,True
-Uruguay,0.0,0.0,1.0,1.0,1,Suy giảm nhóm (-),False
-Uzbekistan,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,True
-Venezuela,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Vietnam,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,True
-Yemen,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Zambia,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
-Zimbabwe,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,True
+country,iso3,cluster_2015,cluster_2016,cluster_2017,cluster_2018,cluster_2019,shift_status,shift_direction,is_stable
+Afghanistan,AFG,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Albania,ALB,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Algeria,DZA,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Argentina,ARG,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Armenia,ARM,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Australia,AUS,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,Không đổi,True
+Austria,AUT,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,Không đổi,True
+Azerbaijan,AZE,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Bahrain,BHR,0.0,0.0,0.0,1.0,0,Biến động trung gian,Không đổi,False
+Bangladesh,BGD,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Belarus,BLR,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Belgium,BEL,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,Không đổi,True
+Benin,BEN,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Bhutan,BTN,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,Không đổi,True
+Bolivia,BOL,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Bosnia and Herzegovina,BIH,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Botswana,BWA,2.0,1.0,1.0,1.0,1,Cải thiện nhóm (+),Tăng,False
+Brazil,BRA,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Bulgaria,BGR,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Burkina Faso,BFA,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Burundi,BDI,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Cambodia,KHM,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Cameroon,CMR,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Canada,CAN,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,Không đổi,True
+Central African Republic,CAF,2.0,,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Chad,TCD,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Chile,CHL,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+China,CHN,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Colombia,COL,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Comoros,COM,2.0,2.0,,,2,Ổn định tuyệt đối,Không đổi,True
+Congo (Brazzaville),COG,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Congo (Kinshasa),COD,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Costa Rica,CRI,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Croatia,HRV,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Cyprus,CYP,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Czech Republic,CZE,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Denmark,DNK,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,Không đổi,True
+Dominican Republic,DOM,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Ecuador,ECU,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Egypt,EGY,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+El Salvador,SLV,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Estonia,EST,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Eswatini,SWZ,2.0,,,,2,Ổn định tuyệt đối,Không đổi,True
+Ethiopia,ETH,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Finland,FIN,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,Không đổi,True
+France,FRA,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Gabon,GAB,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Gambia,GMB,,,,,2,Ổn định tuyệt đối,Không đổi,True
+Georgia,GEO,2.0,2.0,2.0,2.0,1,Cải thiện nhóm (+),Tăng,False
+Germany,DEU,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,Không đổi,True
+Ghana,GHA,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Greece,GRC,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Guatemala,GTM,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Guinea,GIN,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Haiti,HTI,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Honduras,HND,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Hong Kong,HKG,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,Không đổi,True
+Hungary,HUN,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Iceland,ISL,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,Không đổi,True
+India,IND,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Indonesia,IDN,1.0,1.0,1.0,1.0,0,Cải thiện nhóm (+),Tăng,False
+Iran,IRN,1.0,1.0,2.0,1.0,1,Biến động trung gian,Không đổi,False
+Iraq,IRQ,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Ireland,IRL,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,Không đổi,True
+Israel,ISR,1.0,1.0,1.0,0.0,1,Biến động trung gian,Không đổi,False
+Italy,ITA,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Ivory Coast,CIV,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Jamaica,JAM,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Japan,JPN,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Jordan,JOR,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Kazakhstan,KAZ,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Kenya,KEN,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Kosovo,XKX,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Kuwait,KWT,0.0,1.0,0.0,1.0,1,Suy giảm nhóm (-),Giảm,False
+Kyrgyzstan,KGZ,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Laos,LAO,2.0,2.0,,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Latvia,LVA,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Lebanon,LBN,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Lesotho,LSO,2.0,,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Liberia,LBR,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Libya,LBY,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Lithuania,LTU,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Luxembourg,LUX,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,Không đổi,True
+Madagascar,MDG,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Malawi,MWI,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Malaysia,MYS,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Mali,MLI,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Malta,MLT,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,Không đổi,True
+Mauritania,MRT,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Mauritius,MUS,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Mexico,MEX,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Moldova,MDA,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Mongolia,MNG,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Montenegro,MNE,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Morocco,MAR,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Mozambique,MOZ,2.0,,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Myanmar,MMR,2.0,2.0,2.0,0.0,0,Cải thiện nhóm (+),Tăng,False
+Namibia,NAM,,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Nepal,NPL,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Netherlands,NLD,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,Không đổi,True
+New Zealand,NZL,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,Không đổi,True
+Nicaragua,NIC,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Niger,NER,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Nigeria,NGA,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+North Cyprus,CYP,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+North Macedonia,MKD,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Norway,NOR,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,Không đổi,True
+Pakistan,PAK,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Palestinian Territories,PSE,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Panama,PAN,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Paraguay,PRY,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Peru,PER,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Philippines,PHL,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Poland,POL,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Portugal,PRT,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Qatar,QAT,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,Không đổi,True
+Romania,ROU,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Russia,RUS,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Rwanda,RWA,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Saudi Arabia,SAU,1.0,1.0,0.0,1.0,1,Biến động trung gian,Không đổi,False
+Senegal,SEN,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Serbia,SRB,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Sierra Leone,SLE,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Singapore,SGP,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,Không đổi,True
+Slovakia,SVK,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Slovenia,SVN,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Somalia,SOM,,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+South Africa,ZAF,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+South Korea,KOR,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+South Sudan,SSD,,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Spain,ESP,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Sri Lanka,LKA,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Sweden,SWE,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,Không đổi,True
+Switzerland,CHE,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,Không đổi,True
+Syria,SYR,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Taiwan,TWN,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Tajikistan,TJK,2.0,2.0,1.0,2.0,2,Biến động trung gian,Không đổi,False
+Tanzania,TZA,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Thailand,THA,0.0,0.0,0.0,1.0,0,Biến động trung gian,Không đổi,False
+Togo,TGO,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Trinidad and Tobago,TTO,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Tunisia,TUN,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Turkey,TUR,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Turkmenistan,TKM,1.0,1.0,0.0,1.0,1,Biến động trung gian,Không đổi,False
+Uganda,UGA,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Ukraine,UKR,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+United Arab Emirates,ARE,0.0,0.0,0.0,,0,Ổn định tuyệt đối,Không đổi,True
+United Kingdom,GBR,0.0,0.0,0.0,1.0,0,Biến động trung gian,Không đổi,False
+United States,USA,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,Không đổi,True
+Uruguay,URY,0.0,0.0,1.0,1.0,1,Suy giảm nhóm (-),Giảm,False
+Uzbekistan,UZB,0.0,0.0,0.0,0.0,0,Ổn định tuyệt đối,Không đổi,True
+Venezuela,VEN,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Vietnam,VNM,1.0,1.0,1.0,1.0,1,Ổn định tuyệt đối,Không đổi,True
+Yemen,YEM,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Zambia,ZMB,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True
+Zimbabwe,ZWE,2.0,2.0,2.0,2.0,2,Ổn định tuyệt đối,Không đổi,True

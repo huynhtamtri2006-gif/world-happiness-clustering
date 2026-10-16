@@ -34,7 +34,7 @@ Bảng metric elbow/silhouette: 8 dòng; ma trận liên kết Ward mẫu: 39 d�
   PASS: test_cluster_radar.png — 546098 bytes, DPI = 300, kích thước 2509x2551 px
 
 [7/10] plot_happiness_score_by_cluster
-  PASS: test_happiness_score_by_cluster.png — 114393 bytes, DPI = 300, kích thước 2971x1768 px
+  PASS: test_happiness_score_by_cluster.png — 114895 bytes, DPI = 300, kích thước 2971x1768 px
 
 [8/10] plot_cluster_profiles_bar
   PASS: test_cluster_profiles_bar.png — 152357 bytes, DPI = 300, kích thước 3571x1828 px
