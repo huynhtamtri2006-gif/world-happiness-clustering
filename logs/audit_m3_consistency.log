@@ -37,11 +37,11 @@ Thống kê độ ổn định: {'Ổn định tuyệt đối': 142, 'Biến đ�
 --- [NGÀY 20] KIỂM TRA ĐỘ PHÂN GIẢI TOÀN BỘ HÌNH ẢNH (300 DPI) ---
 Tổng số hình ảnh tìm thấy trong reports/figures/: 16 hình.
 PASS: Đạt và vượt chỉ tiêu số lượng (>= 12 hình ảnh phục vụ Báo cáo Word).
-PASS: boxplots_outliers.png — DPI: 300 — Kích thước: (3556, 1806) px
+PASS: boxplots_outliers.png — DPI: 300 — Kích thước: (3552, 1812) px
 PASS: cluster_count_trend.png — DPI: 300 — Kích thước: (3358, 1812) px
-PASS: correlation_heatmap.png — DPI: 300 — Kích thước: (2403, 1928) px
+PASS: correlation_heatmap.png — DPI: 300 — Kích thước: (2289, 2052) px
 PASS: elbow_silhouette_kmeans.png — DPI: 300 — Kích thước: (4170, 1473) px
-PASS: feature_distributions.png — DPI: 300 — Kích thước: (4200, 2400) px
+PASS: feature_distributions.png — DPI: 300 — Kích thước: (4452, 2821) px
 PASS: k_sensitivity_2015.png — DPI: 300 — Kích thước: (2100, 1200) px
 PASS: k_sensitivity_2016.png — DPI: 300 — Kích thước: (2100, 1200) px
 PASS: k_sensitivity_2017.png — DPI: 300 — Kích thước: (2100, 1200) px
